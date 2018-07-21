@@ -1,7 +1,10 @@
 {
 	"git.enabled": true,
 
-// Path to the git executable
-"git.path": "/usr/local/git",
+	// Path to the git executable
+	"git.path": "/usr/local/git",
+
+	"editor.insertSpaces": true,
+	"editor.tabSize": 2,
 
 }
