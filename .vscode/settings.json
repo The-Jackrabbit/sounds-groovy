@@ -1,0 +1,7 @@
+{
+	"git.enabled": true,
+
+// Path to the git executable
+"git.path": "/usr/local/git",
+
+}
