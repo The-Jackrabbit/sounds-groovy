@@ -1,0 +1,10 @@
+.header-container {
+  width: 100vw;
+  background-color: #FFFDF9;
+  padding: 20px 0px;
+}
+.header-container a {
+  padding: 0px 12px;
+  font-weight: 200;
+  font-size: 14px;
+}

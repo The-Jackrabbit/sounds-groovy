@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 import { Switch, Route } from 'react-router-dom';
 
 // Pages
@@ -7,9 +8,13 @@ import Contact from './pages/Contact';
 import StaffLogin from './pages/StaffLogin';
 import PageNotFound from './pages/PageNotFound';
 
+// Components
+import Header from './components/header/Header';
+
 const App = () => {
   return (
     <div>
+      <Header />
       <Switch>
         <Route exact path="/" component={Home}/>
         <Route exact path="/contact/" component={Contact} />
