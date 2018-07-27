@@ -4,7 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 // Pages
 import Home from './pages/Home';
 import Contact from './pages/Contact';
-import StaffLogin from './pages/StaffLogin';
+import AboutUs from './pages/AboutUs/AboutUs';
 import PageNotFound from './pages/PageNotFound';
 
 const App = () => {
@@ -13,7 +13,7 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={Home}/>
         <Route exact path="/contact/" component={Contact} />
-        <Route exact path="/login/" component={StaffLogin} />
+        <Route exact path="/aboutus/" component={AboutUs} />
         <Route path="/" component={PageNotFound} />
       </Switch>
     </div>
