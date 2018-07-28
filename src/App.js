@@ -3,7 +3,7 @@ import './App.css';
 import { Switch, Route } from 'react-router-dom';
 
 // Pages
-import Home from './pages/Home';
+import Home from './pages/Home/Home';
 import Contact from './pages/Contact';
 import StaffLogin from './pages/StaffLogin';
 import PageNotFound from './pages/PageNotFound';

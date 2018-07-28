@@ -12,7 +12,6 @@ const Header = () => {
       <Link to='/login'>Staff Login</Link>
       <Link to='/aadsfasdfsd'>404 Example</Link>
       <a className='airbnb' href='http://www.airbnb.com/rooms/26077543?location=Nags%20Head%2C%20NC'>Airbnb <MdLaunch /></a>
-      
     </div>
   );
 };
