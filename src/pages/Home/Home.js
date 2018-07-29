@@ -34,7 +34,7 @@ const Home = () => {
 
       <FullscreenView
         topText="Take a look!"
-        bigText="Let's take a look at Sounds Groovy OBX!"
+        bigText="Groovy - marvelous, wonderful, excellent!"
         buttonText='Photo Tour'
         buttonUrl='/photos'
         imageUrl={sunrise}
@@ -47,6 +47,15 @@ const Home = () => {
         buttonText='OBX Guide'
         buttonUrl='/guide'
         imageUrl={sunset}
+      >
+      </FullscreenView>
+
+      <FullscreenView
+        topText="Rules - let's make this fun!!"
+        bigText="Rules, Groovy!"
+        buttonText='Groovy Rules'
+        buttonUrl='/rules'
+        imageUrl={ourhouse}
       >
       </FullscreenView>
     </div>
