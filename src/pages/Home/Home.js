@@ -18,7 +18,7 @@ const Home = () => {
         topText="About Us"
         bigText="Who are we?"
         buttonText='Learn More'
-        buttonUrl='/about-us'
+        buttonUrl='/aboutus'
         imageUrl={sound_view}
       >
       </FullscreenView>

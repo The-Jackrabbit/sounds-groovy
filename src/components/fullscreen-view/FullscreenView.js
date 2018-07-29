@@ -15,7 +15,7 @@ const defaultProps = {
   topText: 'We sailed away - on a winter\'s day',
   bigText: 'The Meadowlark and the chimcheree',
   buttonText: 'Learn More',
-  buttonUrl: '/about-us',
+  buttonUrl: '/aboutus',
   imageUrl: 'https://i.imgur.com/u8XpMN9.jpg',
 };
 

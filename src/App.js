@@ -4,7 +4,8 @@ import { Switch, Route } from 'react-router-dom';
 
 // Pages
 import Home from './pages/Home/Home';
-import Contact from './pages/Contact';
+import ContactUs from './pages/ContactUs';
+import Guide from './pages/Guide';
 import StaffLogin from './pages/StaffLogin';
 import PageNotFound from './pages/PageNotFound';
 
@@ -17,7 +18,8 @@ const App = () => {
       <Header />
       <Switch>
         <Route exact path="/" component={Home}/>
-        <Route exact path="/contact/" component={Contact} />
+        <Route exact path="/contactus/" component={ContactUs} />
+        <Route exact path="/Guide/" component={Guide} />
         <Route exact path="/login/" component={StaffLogin} />
         <Route path="/" component={PageNotFound} />
       </Switch>
