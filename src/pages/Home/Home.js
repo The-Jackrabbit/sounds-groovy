@@ -1,14 +1,54 @@
 import React from 'react';
 import FullscreenView from '../../components/fullscreen-view/FullscreenView';
 import './Home.css';
+import sound_view from '../../resources/images/0526181018.jpg'
+import deck_life from '../../resources/images/0622181427-EFFECTS.png'
+import sunrise from '../../resources/images/0622180529c-EFFECTS.png'
+import ourhouse from '../../resources/images/0622181509d_HDR.png'
+import sunset from '../../resources/images/0628182027b.png'
+import clouds from '../../resources/images/0621181945l.png'
 
 const Home = () => {
   return (
     <div style={{
       paddingTop: '58px',
     }}>
-      <FullscreenView topText="Houston"></FullscreenView>
-      <div className="fullscreen-view g image-only"></div>
+
+      <FullscreenView
+        topText="About Us"
+        bigText="Who are we?"
+        buttonText='Learn More'
+        buttonUrl='/about-us'
+        imageUrl={sound_view}
+      >
+      </FullscreenView>
+
+      <FullscreenView
+        topText="Amenities"
+        bigText="Why choose Sounds Groovy OBX?"
+        buttonText='Why SGOBX?'
+        buttonUrl='/amenities'
+        imageUrl={deck_life}
+      >
+      </FullscreenView>
+
+      <FullscreenView
+        topText="Take a look!"
+        bigText="Let's take a look at Sounds Groovy OBX!"
+        buttonText='Photo Tour'
+        buttonUrl='/photos'
+        imageUrl={sunrise}
+      >
+      </FullscreenView>
+
+      <FullscreenView
+        topText="WHAT TO DO NOW THAT YOU'RE HERE"
+        bigText="OUR OBX GUIDE"
+        buttonText='OBX Guide'
+        buttonUrl='/guide'
+        imageUrl={sunset}
+      >
+      </FullscreenView>
     </div>
   );
 };
