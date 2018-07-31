@@ -4,7 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 
 // Pages
 import Home from './pages/Home/Home';
-import AboutUs from './pages/AboutUs';
+import AboutUs from './pages/AboutUs/AboutUs';
 import ContactUs from './pages/ContactUs';
 import Guide from './pages/Guide';
 // import StaffLogin from './pages/StaffLogin';
