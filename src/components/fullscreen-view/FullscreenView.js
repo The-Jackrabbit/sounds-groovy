@@ -40,7 +40,7 @@ const FullscreenView = ({
           backgroundImage: `url(${imageUrl})`,
         }}></div>
       </div>
-      <div className="fullscreen-view g image-only"></div>
+      {/* <div className="fullscreen-view g image-only"></div> */}
     </div>
   );
 };

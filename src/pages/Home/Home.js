@@ -10,9 +10,9 @@ import clouds from '../../resources/images/0621181945l.png'
 
 const Home = () => {
   return (
-    <div style={{
-      paddingTop: '58px',
-    }}>
+    <div 
+      // style={{paddingTop: '58px'}}
+    >
 
       <FullscreenView
         topText="About Us"
