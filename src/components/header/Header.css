@@ -1,0 +1,16 @@
+.header-container {
+  width: 100vw;
+  background-color: #FFFDF9;
+  padding: 20px 0px;
+  position: fixed;
+  z-index:1;
+  text-transform: uppercase;
+}
+.header-container a {
+  padding: 0px 12px;
+  font-weight: 200;
+  font-size: 14px;
+}
+.airbnb {
+  color: #fd5c63 !important;
+}
