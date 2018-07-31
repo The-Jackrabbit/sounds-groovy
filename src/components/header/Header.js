@@ -2,14 +2,15 @@ import React from 'react';
 import './Header.css';
 
 import { Link } from 'react-router-dom';
-import logo from '../../resources/sgobxlogo.ico';
+import logo from '../../resources/logo.svg';
 
 const Header = () => {
   return (
     <div>
       <div className="header-container">
-        <img src={logo} alt="Sounds Groovy OBX" height="100" width="100" align='middle'></img>
-        <Link to='/'>Home</Link>
+        <Link to='/' style={{verticalAlign: 'initial'}}>
+          <img src={logo} alt="Sounds Groovy OBX" height="60" width="40" align='middle' />
+        </Link>
         <Link to='/aboutus'>About Us</Link>
         <Link to='/location'>Location</Link>
         <Link to='/gallery'>Gallery</Link>
@@ -20,9 +21,10 @@ const Header = () => {
         <Link to='/faq'>FAQ</Link>
         <Link to='/blog'>BLOG</Link>
         <Link to='/contactus'>Contact Us</Link>
-
-        {/* <Link to='/login'>Staff Login</Link>
-      <Link to='/aadsfasdfsd'>404 Example</Link> */}
+        {/* 
+        <Link to='/login'>Staff Login</Link>
+        <Link to='/aadsfasdfsd'>404 Example</Link>
+        */}
       </div>
     </div>
   );
