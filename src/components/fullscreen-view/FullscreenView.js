@@ -2,6 +2,8 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+import './FullscreenView.css';
 
 const propTypes = {
   topText: PropTypes.string,
@@ -27,20 +29,19 @@ const FullscreenView = ({
   imageUrl 
 }) => {
   return (
-    <div>
-      <div className="fullscreen-view standard" >
-        <div className="sidebar">
-          <div className="action-container">
-            <p>{topText}</p>
-            <h1>{bigText}</h1>
-            <button>{buttonText}</button>
-          </div>
+    <div className="fullscreen-view standard" >
+      <div className="sidebar">
+        <div className="action-container">
+          <p>{topText}</p>
+          <h1>{bigText}</h1>
+          <button>
+            <Link to={buttonUrl}>{buttonText}</Link>
+          </button>
         </div>
-        <div className="image-container" style={{
-          backgroundImage: `url(${imageUrl})`,
-        }}></div>
       </div>
-      {/* <div className="fullscreen-view g image-only"></div> */}
+      <div className="image-container" style={{
+        backgroundImage: `url(${imageUrl})`,
+      }}></div>
     </div>
   );
 };
@@ -49,9 +50,3 @@ FullscreenView.propTypes = propTypes;
 FullscreenView.defaultProps = defaultProps;
 
 export default FullscreenView;
-/*
-backgroundImage: `url(${imageUrl})`,
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}></div>*/
