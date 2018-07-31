@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <div>
       <div className="header-container">
-        <img src={logo} alt="Sounds Groovy OBX" height="60" align='middle'></img>
+        <img src={logo} alt="Sounds Groovy OBX"  height="60" align='middle'></img>
         <Link to='/'>Home</Link>
         <Link to='/aboutus'>About Us</Link>
         <Link to='/location'>Location</Link>
