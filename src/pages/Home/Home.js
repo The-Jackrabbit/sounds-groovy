@@ -6,7 +6,7 @@ import deck_life from '../../resources/images/0622181427-EFFECTS.png';
 import sunrise from '../../resources/images/0622180529c-EFFECTS.png';
 import ourhouse from '../../resources/images/0622181509d_HDR.png';
 import sunset from '../../resources/images/0628182027b.png';
-import clouds from '../../resources/images/0621181945l.png';
+// import clouds from '../../resources/images/0621181945l.png';
 
 const Home = () => {
   return (
@@ -57,50 +57,6 @@ const Home = () => {
       />
     </div>
   );
-};
-
-const page = {
-  fullscreenViews: [
-    {
-      sideBar: {
-        topText: '',
-        bigText: '',
-        button: ''
-      },
-      imageHalf: {
-        image: '' // imageurl
-      }
-    },
-    {
-      onlyImage: true,
-      image: {
-        image: '', // imageurl,
-        topText: '',
-        bigText: '',
-        button: ''
-      }
-    },
-    {
-      sideBar: {
-        topText: '',
-        bigText: '',
-        button: ''
-      },
-      imageHalf: {
-        image: '' // imageurl
-      }
-    },
-    {
-      sideBar: {
-        topText: '',
-        bigText: '',
-        button: ''
-      },
-      imageHalf: {
-        image: '' // imageurl
-      }
-    },
-  ]
 };
 
 export default Home;
