@@ -12,9 +12,9 @@ const Header = () => {
           <img src={logo} alt="Sounds Groovy OBX" height="60" width="40" align='middle' />
         </Link>
         <Link to='/aboutus'>About Us</Link>
+        <Link to='/amenities'>Amenities</Link>
         <Link to='/location'>Location</Link>
         <Link to='/gallery'>Gallery</Link>
-        <Link to='/amenities'>Amenities</Link>
         <Link to='/rules'>Rules, Groovy!</Link>
         <Link to='/guide'>OBX Guide</Link>
         <Link to='/guests'>Groovy Guests!</Link>

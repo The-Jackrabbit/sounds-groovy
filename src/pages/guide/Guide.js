@@ -9,7 +9,7 @@ const Guide = () => {
   // essentially a photo and a link and a recco blurb
   return (
     <div className="Guide">
-      <img className="AboutUs-img" alt="AboutUs-img" src={sunset} />
+      <img className="Guide-img" alt="Guide-img" src={sunset} />
       <h2 align="center">
         Our Favorite Places in the Outer Banks!
       </h2>
