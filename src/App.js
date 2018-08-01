@@ -8,7 +8,9 @@ const App = () => {
   return (
     <div>
       <Header />
-      <Routes />
+      <div className="page-container">
+        <Routes />
+      </div>
     </div>
   );
 };
