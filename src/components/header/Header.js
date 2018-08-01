@@ -7,7 +7,7 @@ import CustomLink from './Link';
 import './Header.css';
 
 const propTypes = {
-  location: PropTypes.string,
+  location: PropTypes.object,
 };
 
 const Header = ({ location }) => {
