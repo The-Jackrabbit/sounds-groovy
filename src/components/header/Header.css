@@ -11,6 +11,9 @@
   font-size: 14px;
   vertical-align: -webkit-baseline-middle;
 }
+.header-container a.active {
+  color: var(--color-green);
+}
 .header-container a:first-child {
   padding-left: 24px;
 }
