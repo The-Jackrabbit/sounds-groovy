@@ -1,14 +1,15 @@
 import React from 'react';
 import './AboutUs.css';
+import sound_view from '../../resources/images/0526181018.jpg';
 
 const AboutUs = () => {
   return (
     <div className="AboutUs">
-      <h1>ABOUT US</h1>
-      <img className="AboutUs-img" alt="AboutUs-img" src={require('../../resources/images/DeckLife.jpg')} />
-      <p>
+      {/* <h1>ABOUT US</h1> */}
+      <img className="AboutUs-img" alt="AboutUs-img" src={sound_view} />
+      <h2 align="center">
         We are the Masters Family!
-      </p>
+      </h2>
       <p>
         Why Sounds Groovy?  For over 30 years this was the home to the coolest, most loving grandparents ever!  They were wonderful free spirits!  Sounds Groovy is an acknowledgement of all the beauty and kindness they shared while they were with us.  They enjoyed fishing, beaching, and love and laughter.  Hopefully you will experience that and much more when you visit Sounds Groovy!
       </p>
