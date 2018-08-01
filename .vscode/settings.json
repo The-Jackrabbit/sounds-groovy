@@ -1,4 +1,5 @@
 {
+  "eslint.enable": true,
 	"git.enabled": true,
 
 	// Path to the git executable
