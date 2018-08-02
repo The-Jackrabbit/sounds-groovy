@@ -10,7 +10,7 @@ import sunset from '../../resources/images/0628182027b.png';
 
 const Home = () => {
   return (
-    <div className="fullscreen-view-container" style={{ paddingTop: '58px', }}>
+    <div className="page home">
 
       <FullscreenView
         topText="About Us"

@@ -1,8 +1,8 @@
 .header-container {
   width: 100vw;
-  background-color: #FFFDF9;
+  background-color: var(--color-white);
   position: fixed;
-  z-index:1;
+  z-index: 1;
   text-transform: uppercase;
 }
 .header-container a {
@@ -11,6 +11,12 @@
   font-size: 14px;
   vertical-align: -webkit-baseline-middle;
 }
+.header-container a.active {
+  color: var(--color-green);
+}
+.header-container a:first-child {
+  padding-left: 24px;
+}
 .airbnb {
-  color: #fd5c63 !important;
+  color: var(--color-red) !important;
 }
