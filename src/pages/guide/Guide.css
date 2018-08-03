@@ -9,3 +9,16 @@
   box-shadow: 0 2px #ccc;
   text-align: justify;
 }
+
+.Guide-img {
+  display: block;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.recommendation-card {
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
