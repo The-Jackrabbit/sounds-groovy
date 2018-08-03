@@ -10,14 +10,6 @@
   text-align: justify;
 }
 
-.Amenities-img {
-  display: block;
-  padding-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-}
-
 .Amenity-img {
   display: block;
   padding-top: 10px;
@@ -38,4 +30,5 @@
   padding: 10px;
   font-size: 14px;
   text-align: center;
+  text-transform: capitalize;
 }

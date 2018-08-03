@@ -1,5 +1,6 @@
 import React from 'react';
 import './Guide.css';
+import '../../App.css';
 import sunset from '../../resources/images/0628182027b.png';
 import RecommendationCard from '../../components/recommendation-card/RecommendationCard';
 
