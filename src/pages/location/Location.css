@@ -1,4 +1,4 @@
-.Amenities {
+.location {
   margin-left: auto;
   margin-right: auto;
   width: 60%;
@@ -10,25 +10,12 @@
   text-align: justify;
 }
 
-.Amenity-img {
+.location-img {
   display: block;
   padding-top: 10px;
   margin-left: auto;
   margin-right: auto;
-  height: 100px;
+  width: 60%;
 }
 
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 10px;
-}
-
-.grid-item {
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 10px;
-  font-size: 14px;
-  text-align: center;
-  text-transform: capitalize;
-}
+.mapid { height: 180px; }

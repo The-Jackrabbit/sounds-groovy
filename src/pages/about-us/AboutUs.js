@@ -1,12 +1,13 @@
 import React from 'react';
 import './AboutUs.css';
+import '../../App.css';
 import sound_view from '../../resources/images/0526181018.jpg';
 
 const AboutUs = () => {
   return (
     <div className="AboutUs">
       {/* <h1>ABOUT US</h1> */}
-      <img className="AboutUs-img" alt="AboutUs-img" src={sound_view} />
+      <img className="header-img" alt="AboutUs-img" src={sound_view} />
       <h2 align="center">
         We are the Masters Family!
       </h2>

@@ -3,10 +3,10 @@ import FullscreenView from '../../components/fullscreen-view/FullscreenView';
 import './Home.css';
 import sound_view from '../../resources/images/0526181018.jpg';
 import deck_life from '../../resources/images/0622181427-EFFECTS.png';
-import sunrise from '../../resources/images/0622180529c-EFFECTS.png';
 import ourhouse from '../../resources/images/0622181509d_HDR.png';
+import sunrise from '../../resources/images/0622180529c-EFFECTS.png';
 import sunset from '../../resources/images/0628182027b.png';
-// import clouds from '../../resources/images/0621181945l.png';
+import clouds from '../../resources/images/0621181945l.png';
 
 const Home = () => {
   return (
@@ -41,7 +41,7 @@ const Home = () => {
 
       <FullscreenView
         topText="WHAT TO DO NOW THAT YOU'RE HERE"
-        bigText="OUR OBX GUIDE"
+        bigText="Outer Banks GUIDE"
         buttonText='OBX Guide'
         buttonUrl='/guide'
         imageUrl={sunset}
@@ -55,6 +55,16 @@ const Home = () => {
         buttonUrl='/rules'
         imageUrl={ourhouse}
       />
+      
+
+      <FullscreenView
+        topText="Where in the world is Sounds Groovy OBX?!"
+        bigText="Where are we?"
+        buttonText='Location'
+        buttonUrl='/locations'
+        imageUrl={clouds}
+      />
+
     </div>
   );
 };
