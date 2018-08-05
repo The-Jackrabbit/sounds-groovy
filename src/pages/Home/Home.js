@@ -1,6 +1,5 @@
 import React from 'react';
 import FullscreenView from '../../components/fullscreen-view/FullscreenView';
-import './Home.css';
 import sound_view from '../../resources/images/0526181018.jpg';
 import deck_life from '../../resources/images/0622181427-EFFECTS.png';
 import ourhouse from '../../resources/images/0622181509d_HDR.png';
@@ -10,8 +9,7 @@ import clouds from '../../resources/images/0621181945l.png';
 
 const Home = () => {
   return (
-    <div className="page home">
-
+    <div>
       <FullscreenView
         topText="About Us"
         bigText="Who are we?"

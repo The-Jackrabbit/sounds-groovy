@@ -1,13 +1,11 @@
 import React from 'react';
-import './Rules.css';
 import '../../App.css';
 import ourhouse from '../../resources/images/0622181509d_HDR.png';
 
 
-
 const Rules = () => {
   return (
-    <div className="Rules">
+    <div>
       <img className="header-img" alt="Rules-img" src={ourhouse} />
       <h2 align='center'>
         Yes, rules, even on vacation!

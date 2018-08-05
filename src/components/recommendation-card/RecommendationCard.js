@@ -17,20 +17,22 @@ const defaultProps = {
   linkTo: 'http://google.com',
 };
 
-const RecommendationCard = ({ 
-  title, 
-  description, 
-  imageUrl, 
+const RecommendationCard = ({
+  title,
+  description,
+  imageUrl,
   linkTo
 }) => {
   return (
-    <div className="recommendation-card">
-      <a href={linkTo} className="image-container" style={{
-        backgroundImage: `url(${imageUrl})`
-      }}>
-        <h1>{title}</h1>
-      </a>
-      <p className="description">{description}</p>
+    <div className="grid-item">
+      <div className="recommendation-card">
+        <a href={linkTo} className="image-container" style={{
+          backgroundImage: `url(${imageUrl})`
+        }}>
+          <h1>{title}</h1>
+        </a>
+        <p className="description">{description}</p>
+      </div>
     </div>
   );
 };

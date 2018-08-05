@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import './Amenities.css';
 import '../../App.css';
 import deck_life from '../../resources/images/0622181427-EFFECTS.png';
@@ -32,10 +34,15 @@ import mmirror from '../../resources/my-icons-collection/svg/025-dresser.svg';
 import soap from '../../resources/my-icons-collection/svg/027-shampoo.svg';
 import hair_dryer from '../../resources/my-icons-collection/svg/002-dryer.svg';
 
-var general_dict = {
+const propTypes = {
+  itemDescr: PropTypes.string,
+  itemIcon: PropTypes.string,
+};
 
-  first_aid_kit:      'First Aid Kit',
-  fire_extinguisher:  'Fire Extinguishers on all levels'
+
+const defaultProps = {
+  itemDescr: 'Item Description',
+  itemIcon: '../../resources/sgobxlogo2.svg'
 };
 
 const Amenities = () => {
@@ -52,8 +59,6 @@ const Amenities = () => {
       <div>
         <h2 align='left'>General</h2>
         <div className="grid-container">
-
-          {/* Luke - key, value with loop */}
 
           <GridItem
             itemDescr='First Aid Kit'
@@ -224,18 +229,22 @@ const Amenities = () => {
   );
 };
 
-
-
 const GridItem = ({
   itemDescr,
   itemIcon
 }) => {
   return (
     <div className="grid-item">
-      <img className="Amenity-img" alt="Amenity-img" src={itemIcon} />
+      <img className="header-img" alt="Amenity-img" src={itemIcon} />
       <p>{itemDescr}</p>
     </div>
   );
 };
+
+
+
+Amenities.propTypes = propTypes;
+Amenities.defaultProps = defaultProps;
+
 
 export default Amenities;

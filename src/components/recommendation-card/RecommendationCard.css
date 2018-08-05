@@ -1,13 +1,14 @@
 .recommendation-card {
-  width: 400px;
+  width: inherit;
+  height: 300px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.2);
 }
-.image-container {
-  height: 300px;
+.recommendation-card .image-container {
+  height: 200px;
   display: block;
   position: relative;
 }
-.image-container h1 {
+.recommendation-card .image-container h1 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -16,8 +17,19 @@
   padding: 12px;
   line-height: 90%;
 }
-.description {
+.recommendation-card .description {
   margin: 0px;
   padding: 12px;
   font-size: 14px;
+  text-transform: none;
+}
+
+.grid-item {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  font-size: 14px;
+  text-align: left;
+  text-transform: capitalize;
 }

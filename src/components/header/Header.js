@@ -15,7 +15,7 @@ const Header = ({ location }) => {
 
   return (
     <div className="header-container">
-      <Link to='/' style={{verticalAlign: 'initial'}}>
+      <Link to='/' style={{ verticalAlign: 'initial' }}>
         <img src={logo} alt="Sounds Groovy OBX" height="60" width="40" align='middle' />
       </Link>
       <CustomLink to='/aboutus' current={current}>About Us</CustomLink>

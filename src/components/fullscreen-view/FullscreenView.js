@@ -39,7 +39,6 @@ const FullscreenView = ({
           </button>
         </div>
       </div>
-      {/* Luke we need to add padding? arount pic */}
       <div className="image-container" style={{
         backgroundImage: `url(${imageUrl})`,
       }}></div>
