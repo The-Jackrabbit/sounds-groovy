@@ -5,11 +5,13 @@ import ourhouse from '../../resources/images/0622181509d_HDR.png';
 
 const Rules = () => {
   return (
-    <div>
-      <img className="header-img" alt="Rules-img" src={ourhouse} />
-      <h2 align='center'>
-        Yes, rules, even on vacation!
-      </h2>
+    <div className="topic">
+      <div className="intro">
+        <img alt="Rules-img" src={ourhouse}/>
+        <h2>
+          Yes, rules, even on vacation!
+        </h2>
+      </div>
 
       <div>
         <p className='card'>

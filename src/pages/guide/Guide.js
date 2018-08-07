@@ -1,8 +1,9 @@
 import React from 'react';
-import './Guide.css';
-import '../../App.css';
+// import './Guide.css';
+// import '../../App.css';
 import sunset from '../../resources/images/0628182027b.png';
 import RecommendationCard from '../../components/recommendation-card/RecommendationCard';
+import '../../components/recommendation-card/RecommendationCard.css';
 
 const Guide = () => {
   return (
