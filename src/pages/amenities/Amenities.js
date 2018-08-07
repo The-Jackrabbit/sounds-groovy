@@ -47,6 +47,7 @@ import hangar from '../../resources/my-icons-collection/svg/034-hanger.svg';
 const Amenities = () => {
   return (
     <div className="topic">
+
       <div className="intro">
         <img alt="Amenities-img" src={deck_life}/>
         <h2>
@@ -61,7 +62,7 @@ const Amenities = () => {
         </p>
       </div>
 
-      <div className="grid-content">
+      <div className="grid-content-sm">
         <h2>General</h2>
 
         <div className="grid-item">
@@ -105,7 +106,7 @@ const Amenities = () => {
         </div>
       </div>
 
-      <div className="grid-content">
+      <div className="grid-content-sm">
         <h2>Safety</h2>
 
         <div className="grid-item">
@@ -135,7 +136,7 @@ const Amenities = () => {
 
       </div>
 
-      <div className="grid-content">
+      <div className="grid-content-sm">
         <h2>Kitchen</h2>
 
         <div className="grid-item">
@@ -180,7 +181,7 @@ const Amenities = () => {
 
       </div>
 
-      <div className="grid-content">
+      <div className="grid-content-sm">
         <h2>Recreational</h2>
 
         <div className="grid-item">
@@ -225,7 +226,7 @@ const Amenities = () => {
 
       </div>
 
-      <div className="grid-content">
+      <div className="grid-content-sm">
         <h2>Personal Care</h2>
 
         <div className="grid-item">

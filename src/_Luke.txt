@@ -6,5 +6,5 @@
 * need to add padding around home page pics
 * compress photos
 * consistently size recco cards in grid item
-* For rules and amenities, I would like a nav-menu on the
+* For rules, guide and amenities, I would like a nav-menu on the
   left-side of the page

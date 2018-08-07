@@ -25,15 +25,13 @@ const RecommendationCard = ({
   linkTo
 }) => {
   return (
-    <div className="grid-item">
-      <div className="recommendation-card">
-        <a href={linkTo} className="image-container" style={{
-          backgroundImage: `url(${imageUrl})`
-        }}>
-          <h1>{title}</h1>
-        </a>
-        <p className="description">{description}</p>
-      </div>
+    <div className="recommendation-card">
+      <a href={linkTo} className="image-container" style={{
+        backgroundImage: `url(${imageUrl})`
+      }}>
+        <h1>{title}</h1>
+      </a>
+      <p className="description">{description}</p>
     </div>
   );
 };

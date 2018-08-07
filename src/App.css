@@ -65,28 +65,6 @@ button:hover {
   width: 60%;
 }
 
-.card {
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-  padding-top: 58px;
-  padding-right: 10px;
-  padding-left: 10px;
-  border: 1px solid #eee;
-  box-shadow: 0 2px #ccc;
-  text-align: justify;
-}
-
-/*.grid-item {*/
-  /*!* border: 1px solid rgba(0, 0, 0, 0.8); *!*/
-  /*padding: 10px;*/
-  /*font-size: 14px;*/
-  /*text-align: center;*/
-  /*text-transform: capitalize;*/
-  /*height: 100px;*/
-  /*width: 100px;*/
-/*}*/
-
 .topic {
   margin: 10px;
 }
@@ -123,10 +101,8 @@ button:hover {
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  width: 75%;
   padding-top: 10px;
-  padding-right: 30px;
-  padding-left: 30px;
   border: 1px solid #eee;
   box-shadow: 0 2px #ccc;
   text-align: justify;
@@ -145,7 +121,7 @@ button:hover {
   text-align: justify;
 }
 
-.topic .grid-content {
+.topic .grid-content-sm {
   display: grid;
   grid-auto-rows: 130px;
   grid-gap: 10px;
@@ -157,20 +133,16 @@ button:hover {
   margin-right: auto;
   width: 70%;
   height: auto;
-  /*padding-top: 10px;*/
-  /*padding-right: 30px;*/
-  /*padding-left: 30px;*/
   border: 1px solid #eee;
   box-shadow: 0 2px #ccc;
-  /*text-align: center;*/
 }
 
-.topic .grid-content h2 {
+.topic .grid-content-sm h2 {
   padding-top: 22px;
   text-align: left;
 }
 
-.topic .grid-content .grid-item {
+.topic .grid-content-sm .grid-item {
   font-size: 12px;
   text-align: center;
   text-transform: capitalize;
@@ -179,7 +151,38 @@ button:hover {
   padding-bottom: 3px;
 }
 
-.topic .grid-content .grid-item img {
+.topic .grid-content-sm .grid-item img {
+  display: block;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.topic .content-lg .grid-content-lg {
+  display: grid;
+  grid-auto-rows: 300px;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  justify-items: center;
+  width: 70%;
+  height: auto;
+  border: 1px solid #eee;
+  box-shadow: 0 2px #ccc;
+}
+
+.topic .content-lg .grid-content-lg h2 {
+  padding-bottom: 22px;
+  text-align: left;
+}
+
+.topic .content-lg .grid-content-lg .grid-item {
+  font-size: 12px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.topic .content-lg .grid-content-lg .grid-item img {
   display: block;
   padding-top: 10px;
   margin-left: auto;
