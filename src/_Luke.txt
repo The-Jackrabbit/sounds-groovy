@@ -1,15 +1,9 @@
 1) I want to post the site as-is on AWS, so that Google will crawl it.
 2) setup location page using LeafletJS
 3) Add Gina's photo
-4) what are best practices for the recco page content
 5) blog page -- what to do?
 6) Gallery - best practice?
-7) Amenities is still red - WHY?    ... itemDescr, itemIcon
-    also, why is columns not even and centered?
-8) Rules page imag is huge - why?
 9) we need to recolor google tab icon for SGOBX logo
 10) need to add padding around home page pics
 11) compress photos
-12) need to add wifi, free parking, trailer parking and other missed Amenities
 13) consistently size recco cards in grid item
-14) 

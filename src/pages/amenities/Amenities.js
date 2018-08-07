@@ -1,16 +1,24 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import '../../App.css';
 import deck_life from '../../resources/images/0622181427-EFFECTS.png';
 // general
+import sheets from '../../resources/my-icons-collection/svg/005-towel.svg';
+import wifi from '../../resources/my-icons-collection/svg/028-wifi.svg';
+import tv from '../../resources/my-icons-collection/svg/029-television.svg';
+import cable from '../../resources/my-icons-collection/svg/030-cable-tv-sign-with-monitor.svg';
+import heat from '../../resources/my-icons-collection/svg/031-smart-home.svg';
+import parking from '../../resources/my-icons-collection/svg/032-parking.svg';
+import king from '../../resources/my-icons-collection/svg/037-bed.svg';
+import queen from '../../resources/my-icons-collection/svg/038-bed-1.svg';
+// safety
 import first_aid_kit from '../../resources/my-icons-collection/svg/003-medicine.svg';
 import fire_extinguisher from '../../resources/my-icons-collection/svg/004-fire.svg';
 import flashlight from '../../resources/my-icons-collection/svg/001-flashlight.svg';
-import sheets from '../../resources/my-icons-collection/svg/005-towel.svg';
-import washer from '../../resources/my-icons-collection/svg/006-household.svg';
-import iron from '../../resources/my-icons-collection/svg/008-iron-1.svg';
+import smoke from '../../resources/my-icons-collection/svg/035-smoke-detector.svg';
+import monoxide from '../../resources/my-icons-collection/svg/036-smoke-detector-1.svg';
 // kitchen
 import keurig from '../../resources/my-icons-collection/svg/009-coffee-maker.svg';
+import kitchen from '../../resources/my-icons-collection/svg/033-kitchen.svg';
 import toaster from '../../resources/my-icons-collection/svg/010-microwave-oven.svg';
 import iblender from '../../resources/my-icons-collection/svg/011-beater.svg';
 import blender from '../../resources/my-icons-collection/svg/012-mixer.svg';
@@ -31,17 +39,10 @@ import mirror from '../../resources/my-icons-collection/svg/024-furniture-and-ho
 import mmirror from '../../resources/my-icons-collection/svg/025-dresser.svg';
 import soap from '../../resources/my-icons-collection/svg/027-shampoo.svg';
 import hair_dryer from '../../resources/my-icons-collection/svg/002-dryer.svg';
+import washer from '../../resources/my-icons-collection/svg/006-household.svg';
+import iron from '../../resources/my-icons-collection/svg/008-iron-1.svg';
+import hangar from '../../resources/my-icons-collection/svg/034-hanger.svg';
 
-const propTypes = {
-  itemDescr: PropTypes.string,
-  itemIcon: PropTypes.string,
-};
-
-
-const defaultProps = {
-  itemDescr: 'Item Description',
-  itemIcon: '../../resources/sgobxlogo2.svg'
-};
 
 const Amenities = () => {
   return (
@@ -49,7 +50,7 @@ const Amenities = () => {
       <div className="intro">
         <img alt="Amenities" src={deck_life}/>
         <h2>
-          Amenities ... features that provide comfort, convenience, or pleasure!
+          Amenities ... provide comfort, convenience, and/ or pleasure!
         </h2>
         <p>
           Sounds Groovy OBX seeks to provide many amenities! Whether you are
@@ -64,6 +65,60 @@ const Amenities = () => {
         <h2>General</h2>
 
         <div className="grid-item">
+          <img alt="Amenity-img" src={king}/>
+          <p>One King Bed</p>
+        </div>
+
+        <div className="grid-item">
+          <img alt="Amenity-img" src={queen}/>
+          <p>Two Queen Beds</p>
+        </div>
+
+        <div className="grid-item">
+          <img alt="Amenity-img" src={sheets}/>
+          <p>Sheets, Bath & Beach Towels</p>
+        </div>
+
+        <div className="grid-item">
+          <img alt="Amenity-img" src={wifi}/>
+          <p>Wifi</p>
+        </div>
+
+        <div className="grid-item">
+          <img alt="Amenity-img" src={tv}/>
+          <p>Television</p>
+        </div>
+
+        <div className="grid-item">
+          <img alt="Amenity-img" src={cable}/>
+          <p>Cable Television</p>
+        </div>
+
+        <div className="grid-item">
+          <img alt="Amenity-img" src={heat}/>
+          <p>Heat & Air Conditioning</p>
+        </div>
+
+        <div className="grid-item">
+          <img alt="Amenity-img" src={parking}/>
+          <p>Free Parking</p>
+        </div>
+      </div>
+
+      <div className="grid-content">
+        <h2>Safety</h2>
+
+        <div className="grid-item">
+          <img alt="Amenity-img" src={smoke}/>
+          <p>Smoke Detectors</p>
+        </div>
+
+        <div className="grid-item">
+          <img alt="Amenity-img" src={monoxide}/>
+          <p>Carbon Monoxide Detectors</p>
+        </div>
+
+        <div className="grid-item">
           <img alt="Amenity-img" src={first_aid_kit}/>
           <p>First Aid Kit</p>
         </div>
@@ -73,168 +128,151 @@ const Amenities = () => {
           <p>Fire Extinguishers on all levels</p>
         </div>
 
-        <GridItem
-          itemDescr='Flashlights in every bedroom'
-          itemIcon={flashlight}
-        />
-
-        <GridItem
-          itemDescr='Sheets, Bath Towels & Beach Towels'
-          itemIcon={sheets}
-        />
-
-        <GridItem
-          itemDescr='Washer & Dryer'
-          itemIcon={washer}
-        />
-
-        <GridItem
-          itemDescr='Iron & Ironing Board'
-          itemIcon={iron}
-        />
+        <div className="grid-item">
+          <img alt="Amenity-img" src={flashlight}/>
+          <p>Flashlights in every bedroom</p>
+        </div>
 
       </div>
 
       <div className="grid-content">
         <h2>Kitchen</h2>
 
-        <GridItem
-          itemDescr='Keurig'
-          itemIcon={keurig}
-        />
+        <div className="grid-item">
+          <img alt="Amenity-img" src={kitchen}/>
+          <p>Generously Stocked Kitchen</p>
+        </div>
 
-        <GridItem
-          itemDescr='Toaster Oven'
-          itemIcon={toaster}
-        />
+        <div className="grid-item">
+          <img alt="Amenity-img" src={keurig}/>
+          <p>Keurig</p>
+        </div>
 
-        <GridItem
-          itemDescr='Immersion Blender'
-          itemIcon={iblender}
-        />
+        <div className="grid-item">
+          <img alt="Amenity-img" src={toaster}/>
+          <p>Toaster Oven</p>
+        </div>
 
-        <GridItem
-          itemDescr='Blender'
-          itemIcon={blender}
-        />
+        <div className="grid-item">
+          <img alt="Amenity-img" src={iblender}/>
+          <p>Immersion Blender</p>
+        </div>
 
-        <GridItem
-          itemDescr='Crockpot'
-          itemIcon={crockpot}
-        />
+        <div className="grid-item">
+          <img alt="Amenity-img" src={blender}/>
+          <p>Blender</p>
+        </div>
 
-        <GridItem
-          itemDescr='Variety of Spices & Condiments'
-          itemIcon={spices}
-        />
+        <div className="grid-item">
+          <img alt="Amenity-img" src={crockpot}/>
+          <p>Crockpot</p>
+        </div>
 
-        <GridItem
-          itemDescr='Wine Opener'
-          itemIcon={corkscrew}
-        />
+        <div className="grid-item">
+          <img alt="Amenity-img" src={spices}/>
+          <p>Spices & Condiments</p>
+        </div>
+
+        <div className="grid-item">
+          <img alt="Amenity-img" src={corkscrew}/>
+          <p>Wine Opener</p>
+        </div>
 
       </div>
 
       <div className="grid-content">
         <h2>Recreational</h2>
 
-        <GridItem
-          itemDescr='Beach Gear - Chairs, Umbrellas'
-          itemIcon={umbrella}
-        />
+        <div className="grid-item">
+          <img alt="Amenity-img" src={umbrella}/>
+          <p>Beach Chairs & Umbrellas</p>
+        </div>
 
-        <GridItem
-          itemDescr='Beach Towels'
-          itemIcon={sheets}
-        />
+        <div className="grid-item">
+          <img alt="Amenity-img" src={sheets}/>
+          <p>Beach Towels</p>
+        </div>
 
+        <div className="grid-item">
+          <img alt="Amenity-img" src={pool}/>
+          <p>Community Pool</p>
+        </div>
 
-        <GridItem
-          itemDescr='Community Pool'
-          itemIcon={pool}
-        />
+        <div className="grid-item">
+          <img alt="Amenity-img" src={ramp}/>
+          <p>Community Boat Ramp</p>
+        </div>
 
+        <div className="grid-item">
+          <img alt="Amenity-img" src={rods}/>
+          <p>Fishing Rods</p>
+        </div>
 
-        <GridItem
-          itemDescr='Fishing Rods'
-          itemIcon={rods}
-        />
+        <div className="grid-item">
+          <img alt="Amenity-img" src={fishing}/>
+          <p>Fishing Dock</p>
+        </div>
 
+        <div className="grid-item">
+          <img alt="Amenity-img" src={boat}/>
+          <p>Dock for Water Toys</p>
+        </div>
 
-        <GridItem
-          itemDescr='Fishing Dock'
-          itemIcon={fishing}
-        />
-
-
-        <GridItem
-          itemDescr='Dock for Water Toys'
-          itemIcon={boat}
-        />
-
-
-        <GridItem
-          itemDescr='Community Boat Ramp'
-          itemIcon={ramp}
-        />
-
-
-        <GridItem
-          itemDescr='Trailer Parking'
-          itemIcon={jetski}
-        />
+        <div className="grid-item">
+          <img alt="Amenity-img" src={jetski}/>
+          <p>Trailer Parking</p>
+        </div>
 
       </div>
 
       <div className="grid-content">
         <h2>Personal Care</h2>
 
-        <GridItem
-          itemDescr='Hair Dryer'
-          itemIcon={hair_dryer}
-        />
+        <div className="grid-item">
+          <img alt="Amenity-img" src={hair_dryer}/>
+          <p>Hair Dryer</p>
+        </div>
 
-        <GridItem
-          itemDescr='Dressing mirror'
-          itemIcon={mirror}
-        />
+        <div className="grid-item">
+          <img alt="Amenity-img" src={mirror}/>
+          <p>Dressing mirror</p>
+        </div>
 
-        <GridItem
-          itemDescr='Lighted makeup mirror'
-          itemIcon={mmirror}
-        />
+        <div className="grid-item">
+          <img alt="Amenity-img" src={mmirror}/>
+          <p>Lighted makeup mirror</p>
+        </div>
 
-        <GridItem
-          itemDescr='Shampoo & Conditioner'
-          itemIcon={shampoo}
-        />
+        <div className="grid-item">
+          <img alt="Amenity-img" src={shampoo}/>
+          <p>Shampoo & Conditioner</p>
+        </div>
 
-        <GridItem
-          itemDescr='Body Wash'
-          itemIcon={soap}
-        />
+        <div className="grid-item">
+          <img alt="Amenity-img" src={soap}/>
+          <p>Body Wash</p>
+        </div>
+
+        <div className="grid-item">
+          <img alt="Amenity-img" src={hangar}/>
+          <p>Hangars</p>
+        </div>
+
+        <div className="grid-item">
+          <img alt="Amenity-img" src={washer}/>
+          <p>Washer & Dryer</p>
+        </div>
+
+        <div className="grid-item">
+          <img alt="Amenity-img" src={iron}/>
+          <p>Iron & Ironing Board</p>
+        </div>
 
       </div>
 
     </div>
   );
 };
-
-const GridItem = ({
-                    itemDescr,
-                    itemIcon
-                  }) => {
-  return (
-    <div className="grid-item">
-      <img className="header-img" alt="Amenity-img" src={itemIcon}/>
-      <p>{itemDescr}</p>
-    </div>
-  );
-};
-
-
-Amenities.propTypes = propTypes;
-Amenities.defaultProps = defaultProps;
 
 
 export default Amenities;
