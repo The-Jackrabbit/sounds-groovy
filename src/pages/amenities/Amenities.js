@@ -48,7 +48,7 @@ const Amenities = () => {
   return (
     <div className="topic">
       <div className="intro">
-        <img alt="Amenities" src={deck_life}/>
+        <img alt="Amenities-img" src={deck_life}/>
         <h2>
           Amenities ... provide comfort, convenience, and/ or pleasure!
         </h2>

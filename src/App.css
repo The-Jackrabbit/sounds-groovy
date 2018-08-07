@@ -91,6 +91,10 @@ button:hover {
   margin: 10px;
 }
 
+.topic h2 {
+  text-align: left;
+}
+
 .topic .intro {
   margin-left: auto;
   margin-right: auto;
@@ -115,7 +119,7 @@ button:hover {
   text-align: center;
 }
 
-.topic .content {
+.topic .content-lg {
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -128,8 +132,17 @@ button:hover {
   text-align: justify;
 }
 
-.topic .content h2 {
-  text-align: left;
+.topic .content-sm {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px #ccc;
+  text-align: justify;
 }
 
 .topic .grid-content {

@@ -1,9 +1,10 @@
-1) I want to post the site as-is on AWS, so that Google will crawl it.
-2) setup location page using LeafletJS
-3) Add Gina's photo
-5) blog page -- what to do?
-6) Gallery - best practice?
-9) we need to recolor google tab icon for SGOBX logo
-10) need to add padding around home page pics
-11) compress photos
-13) consistently size recco cards in grid item
+* I want to post the site as-is on AWS, so that Google will crawl it.
+* setup location page using LeafletJS
+* blog page -- what to do?
+* Gallery - best practice?
+* we need to recolor google tab icon for SGOBX logo
+* need to add padding around home page pics
+* compress photos
+* consistently size recco cards in grid item
+* For rules and amenities, I would like a nav-menu on the
+  left-side of the page
