@@ -68,15 +68,10 @@ const Amenities = () => {
           <p>First Aid Kit</p>
         </div>
 
-        <GridItem
-          itemDescr='First Aid Kit'
-          itemIcon={first_aid_kit}
-        />
-
-        <GridItem
-          itemDescr='Fire Extinguishers on all levels'
-          itemIcon={fire_extinguisher}
-        />
+        <div className="grid-item">
+          <img alt="Amenity-img" src={fire_extinguisher}/>
+          <p>Fire Extinguishers on all levels</p>
+        </div>
 
         <GridItem
           itemDescr='Flashlights in every bedroom'
