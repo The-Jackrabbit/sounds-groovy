@@ -97,17 +97,6 @@ button:hover {
   text-align: center;
 }
 
-.topic .content-lg {
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-  padding-top: 10px;
-  border: 1px solid #eee;
-  box-shadow: 0 2px #ccc;
-  text-align: justify;
-}
-
 .topic .content-sm {
   margin-top: 20px;
   margin-left: auto;
@@ -159,16 +148,23 @@ button:hover {
   width: 60%;
 }
 
+.topic .content-lg {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  padding-top: 10px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px #ccc;
+  text-align: justify;
+}
+
 .topic .content-lg .grid-content-lg {
   display: grid;
-  grid-auto-rows: 300px;
+  grid-auto-rows: 320px;
   grid-template-columns: auto auto auto;
   grid-gap: 10px;
   justify-items: center;
-  width: 70%;
-  height: auto;
-  border: 1px solid #eee;
-  box-shadow: 0 2px #ccc;
 }
 
 .topic .content-lg .grid-content-lg h2 {
