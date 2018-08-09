@@ -19,7 +19,7 @@ const AboutUs = () => {
         </p>
       </div>
 
-      <div className="content">
+      <div className="content-sm">
         <h3>What's Next?</h3>
         <p>
           Sounds Groovy will be undergoing renovations starting October
@@ -34,7 +34,7 @@ const AboutUs = () => {
         </p>
       </div>
 
-      <div className="content">
+      <div className="content-sm">
         <h3>History of the House</h3>
         <p>
           The home was built in 1984.  It was originally purchased from the

@@ -18,8 +18,8 @@ const Routes = () => (
     <Route exact path="/amenities/" component={Amenities} />
     <Route exact path="/guide/" component={Guide} />
     <Route exact path="/rules/" component={Rules} />
-    <Route exact path="/location/" component={Location} />
-    <Route exact path="/contactus/" component={ContactUs} />
+    {/*<Route exact path="/location/" component={Location} />*/}
+    {/*<Route exact path="/contactus/" component={ContactUs} />*/}
     <Route path="/" component={PageNotFound} />
   </Switch>
 );
