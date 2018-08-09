@@ -39,6 +39,7 @@ const FullscreenView = ({
       </div>
       <div className="image-container" style={{
         backgroundImage: `url(${imageUrl})`,
+        margin: '20px'
       }}></div>
     </div>
   );
