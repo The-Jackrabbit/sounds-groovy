@@ -33,14 +33,19 @@ const FullscreenView = ({
           <p>{topText}</p>
           <h1>{bigText}</h1>
           <button>
-            <Link to={buttonUrl}>{buttonText}</Link>
+
+            {/^https?:\/\//.test(buttonUrl)
+              ? <a href={buttonUrl}>{buttonText}</a>
+              : <Link to={buttonUrl}>{buttonText}</Link>
+            }
+
           </button>
         </div>
       </div>
-      <div className="image-container" style={{
-        backgroundImage: `url(${imageUrl})`,
-        margin: '20px'
-      }}></div>
+      <div
+        className="image-container"
+        style={{backgroundImage: `url(${imageUrl})`}}
+      ></div>
     </div>
   );
 };

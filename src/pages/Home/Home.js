@@ -1,23 +1,25 @@
 import React from 'react';
 import FullscreenView from '../../components/fullscreen-view/FullscreenView';
-import sound_view from '../../resources/images/0526181018.jpg';
-import deck_life from '../../resources/images/0622181427-EFFECTS.png';
-import ourhouse from '../../resources/images/0622181509d_HDR.png';
-import sunrise from '../../resources/images/0622180529c-EFFECTS.png';
-import sunset from '../../resources/images/0628182027b.png';
-import clouds from '../../resources/images/0621181945l.png';
+
+import deck_life from '../../resources/images/corolla-duck-beach-rental.png';
+import ourhouse from '../../resources/images/beach-house-rental-nags-head.png';
+import sunrise from '../../resources/images/family-beach-vacation-north-carolina.png';
+import sunset from '../../resources/images/cottage-vacation-kill-devil-hills.png';
+import clouds from '../../resources/images/rental-kitty-hawk.png';
+import sound_view from '../../resources/images/vacation-rental-outer-banks-nags-head.jpg';
 
 const Home = () => {
   return (
     <div>
+
+
       <FullscreenView
-        topText="About Us"
-        bigText="Who are we?"
-        buttonText='Learn More'
-        buttonUrl='/aboutus'
-        imageUrl={sound_view}
+        topText="Groovy - marvelous, wonderful, excellent!"
+        bigText="Sounds Groovy OBX - Take a Photo Tour"
+        buttonText='Book Now'
+        buttonUrl='https://www.airbnb.com/rooms/26077543'
+        imageUrl={sunrise}
       />
-      
 
       <FullscreenView
         topText="Amenities"
@@ -26,16 +28,16 @@ const Home = () => {
         buttonUrl='/amenities'
         imageUrl={deck_life}
       />
-      
-      
+
+
       {/*<FullscreenView*/}
-        {/*topText="Take a look!"*/}
-        {/*bigText="Groovy - marvelous, wonderful, excellent!"*/}
-        {/*buttonText='Photo Tour'*/}
-        {/*buttonUrl='/photos'*/}
-        {/*imageUrl={sunrise}*/}
+      {/*topText="Take a look!"*/}
+      {/*bigText="Groovy - marvelous, wonderful, excellent!"*/}
+      {/*buttonText='Photo Tour'*/}
+      {/*buttonUrl='/photos'*/}
+      {/*imageUrl={sunrise}*/}
       {/*/>*/}
-      
+
 
       <FullscreenView
         topText="WHAT TO DO NOW THAT YOU'RE HERE"
@@ -44,7 +46,7 @@ const Home = () => {
         buttonUrl='/guide'
         imageUrl={sunset}
       />
-      
+
 
       <FullscreenView
         topText="Policies - let's make this fun!!"
@@ -53,7 +55,7 @@ const Home = () => {
         buttonUrl='/rules'
         imageUrl={ourhouse}
       />
-      
+
 
       <FullscreenView
         topText="Where in the world is Sounds Groovy OBX?!"
@@ -61,6 +63,15 @@ const Home = () => {
         buttonText='Location'
         buttonUrl='/location'
         imageUrl={clouds}
+      />
+
+
+      <FullscreenView
+        topText="About Us"
+        bigText="Who are we?"
+        buttonText='Learn More'
+        buttonUrl='/aboutus'
+        imageUrl={sound_view}
       />
 
     </div>

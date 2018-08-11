@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../App.css';
-import ourhouse from '../../resources/images/0622181509d_HDR.png';
+import ourhouse from '../../resources/images/beach-house-rental-nags-head.png';
 
 
 const Rules = () => {

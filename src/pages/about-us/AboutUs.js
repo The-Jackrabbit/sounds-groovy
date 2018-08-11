@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../App.css';
-import sound_view from '../../resources/images/0526181018.jpg';
+import sound_view from '../../resources/images/vacation-rental-outer-banks-nags-head.jpg';
 
 const AboutUs = () => {
   return (
@@ -40,7 +40,7 @@ const AboutUs = () => {
           The home was built in 1984.  It was originally purchased from the
           builder by Becky and Dave Masters.  Upon their deaths in 2017, Becky
           and Dave's sons, David and Mark inherited the home.  Michele, Mark's
-          wife purchased Dave's half in 2018.  The home is now owned by Mark
+          wife, purchased David's half in 2018.  The home is now owned by Mark
           and Michele Masters.  In time, Mark and Michele's three children,
           Maria, Gina and Luke will take ownership of the home.  We hope to
           keep this home in our family and our hearts for many years to come!

@@ -1,47 +1,47 @@
 import React from 'react';
 import '../../App.css';
-import deck_life from '../../resources/images/0622181427-EFFECTS.png';
+import deck_life from '../../resources/images/corolla-duck-beach-rental.png';
 // general
-import sheets from '../../resources/my-icons-collection/svg/005-towel.svg';
-import wifi from '../../resources/my-icons-collection/svg/028-wifi.svg';
-import tv from '../../resources/my-icons-collection/svg/029-television.svg';
-import cable from '../../resources/my-icons-collection/svg/030-cable-tv-sign-with-monitor.svg';
-import heat from '../../resources/my-icons-collection/svg/031-smart-home.svg';
-import parking from '../../resources/my-icons-collection/svg/032-parking.svg';
-import king from '../../resources/my-icons-collection/svg/037-bed.svg';
-import queen from '../../resources/my-icons-collection/svg/038-bed-1.svg';
+import sheets from '../../resources/svg/005-towel.svg';
+import wifi from '../../resources/svg/028-wifi.svg';
+import tv from '../../resources/svg/029-television.svg';
+import cable from '../../resources/svg/030-cable-tv-sign-with-monitor.svg';
+import heat from '../../resources/svg/031-smart-home.svg';
+import parking from '../../resources/svg/032-parking.svg';
+import king from '../../resources/svg/037-bed.svg';
+import queen from '../../resources/svg/038-bed-1.svg';
 // safety
-import first_aid_kit from '../../resources/my-icons-collection/svg/003-medicine.svg';
-import fire_extinguisher from '../../resources/my-icons-collection/svg/004-fire.svg';
-import flashlight from '../../resources/my-icons-collection/svg/001-flashlight.svg';
-import smoke from '../../resources/my-icons-collection/svg/035-smoke-detector.svg';
-import monoxide from '../../resources/my-icons-collection/svg/036-smoke-detector-1.svg';
+import first_aid_kit from '../../resources/svg/003-medicine.svg';
+import fire_extinguisher from '../../resources/svg/004-fire.svg';
+import flashlight from '../../resources/svg/001-flashlight.svg';
+import smoke from '../../resources/svg/035-smoke-detector.svg';
+import monoxide from '../../resources/svg/036-smoke-detector-1.svg';
 // kitchen
-import keurig from '../../resources/my-icons-collection/svg/009-coffee-maker.svg';
-import kitchen from '../../resources/my-icons-collection/svg/033-kitchen.svg';
-import toaster from '../../resources/my-icons-collection/svg/010-microwave-oven.svg';
-import iblender from '../../resources/my-icons-collection/svg/011-beater.svg';
-import blender from '../../resources/my-icons-collection/svg/012-mixer.svg';
-import crockpot from '../../resources/my-icons-collection/svg/013-cooking.svg';
-import spices from '../../resources/my-icons-collection/svg/014-spices.svg';
-import corkscrew from '../../resources/my-icons-collection/svg/015-bottle-opener.svg';
+import keurig from '../../resources/svg/009-coffee-maker.svg';
+import kitchen from '../../resources/svg/033-kitchen.svg';
+import toaster from '../../resources/svg/010-microwave-oven.svg';
+import iblender from '../../resources/svg/011-beater.svg';
+import blender from '../../resources/svg/012-mixer.svg';
+import crockpot from '../../resources/svg/013-cooking.svg';
+import spices from '../../resources/svg/014-spices.svg';
+import corkscrew from '../../resources/svg/015-bottle-opener.svg';
 // recreational
-import umbrella from '../../resources/my-icons-collection/svg/016-sunbed.svg';
-import rods from '../../resources/my-icons-collection/svg/017-fishing-rod.svg';
-import ramp from '../../resources/my-icons-collection/svg/018-boat-on-a-ramp.svg';
-import jetski from '../../resources/my-icons-collection/svg/019-jet-ski.svg';
-import boat from '../../resources/my-icons-collection/svg/020-speed-boat.svg';
-import pool from '../../resources/my-icons-collection/svg/021-swimming-pool.svg';
-import fishing from '../../resources/my-icons-collection/svg/023-fish-1.svg';
+import umbrella from '../../resources/svg/016-sunbed.svg';
+import rods from '../../resources/svg/017-fishing-rod.svg';
+import ramp from '../../resources/svg/018-boat-on-a-ramp.svg';
+import jetski from '../../resources/svg/019-jet-ski.svg';
+import boat from '../../resources/svg/020-speed-boat.svg';
+import pool from '../../resources/svg/021-swimming-pool.svg';
+import fishing from '../../resources/svg/023-fish-1.svg';
 // personal care
-import shampoo from '../../resources/my-icons-collection/svg/026-soap.svg';
-import mirror from '../../resources/my-icons-collection/svg/024-furniture-and-household.svg';
-import mmirror from '../../resources/my-icons-collection/svg/025-dresser.svg';
-import soap from '../../resources/my-icons-collection/svg/027-shampoo.svg';
-import hair_dryer from '../../resources/my-icons-collection/svg/002-dryer.svg';
-import washer from '../../resources/my-icons-collection/svg/006-household.svg';
-import iron from '../../resources/my-icons-collection/svg/008-iron-1.svg';
-import hangar from '../../resources/my-icons-collection/svg/034-hanger.svg';
+import shampoo from '../../resources/svg/026-soap.svg';
+import mirror from '../../resources/svg/024-furniture-and-household.svg';
+import mmirror from '../../resources/svg/025-dresser.svg';
+import soap from '../../resources/svg/027-shampoo.svg';
+import hair_dryer from '../../resources/svg/002-dryer.svg';
+import washer from '../../resources/svg/006-household.svg';
+import iron from '../../resources/svg/008-iron-1.svg';
+import hangar from '../../resources/svg/034-hanger.svg';
 
 
 const Amenities = () => {

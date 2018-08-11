@@ -1,5 +1,5 @@
 import React from 'react';
-import deck_life from '../../resources/images/0622181427-EFFECTS.png';
+import deck_life from '../../resources/images/corolla-duck-beach-rental.png';
 
 const ContactUs = () => {
   return (
