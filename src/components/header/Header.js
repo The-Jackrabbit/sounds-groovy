@@ -19,7 +19,7 @@ const Header = ({ location }) => {
         <img src={logo} alt="Sounds Groovy OBX" height="60" width="40" align='middle' />
       </Link>
       <CustomLink to='/aboutus' current={current}>About Us</CustomLink>
-      {/*<CustomLink to='/location' current={current}>Location</CustomLink>*/}
+      <CustomLink to='/location' current={current}>Location</CustomLink>
       {/*<CustomLink to='/gallery' current={current}>Gallery</CustomLink>*/}
       <CustomLink to='/amenities' current={current}>Amenities</CustomLink>
       <CustomLink to='/rules' current={current}>Rules, Groovy!</CustomLink>

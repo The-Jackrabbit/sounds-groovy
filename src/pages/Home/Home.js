@@ -27,14 +27,14 @@ const Home = () => {
         imageUrl={deck_life}
       />
       
-
-      <FullscreenView
-        topText="Take a look!"
-        bigText="Groovy - marvelous, wonderful, excellent!"
-        buttonText='Photo Tour'
-        buttonUrl='/photos'
-        imageUrl={sunrise}
-      />
+      
+      {/*<FullscreenView*/}
+        {/*topText="Take a look!"*/}
+        {/*bigText="Groovy - marvelous, wonderful, excellent!"*/}
+        {/*buttonText='Photo Tour'*/}
+        {/*buttonUrl='/photos'*/}
+        {/*imageUrl={sunrise}*/}
+      {/*/>*/}
       
 
       <FullscreenView
@@ -47,7 +47,7 @@ const Home = () => {
       
 
       <FullscreenView
-        topText="Rules - let's make this fun!!"
+        topText="Policies - let's make this fun!!"
         bigText="Rules, Groovy!"
         buttonText='Groovy Rules'
         buttonUrl='/rules'
@@ -59,7 +59,7 @@ const Home = () => {
         topText="Where in the world is Sounds Groovy OBX?!"
         bigText="Where are we?"
         buttonText='Location'
-        buttonUrl='/locations'
+        buttonUrl='/location'
         imageUrl={clouds}
       />
 

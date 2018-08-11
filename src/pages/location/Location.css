@@ -1,21 +1,25 @@
-.location {
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-  padding-top: 58px;
-  padding-right: 10px;
-  padding-left: 10px;
-  border: 1px solid #eee;
-  box-shadow: 0 2px #ccc;
-  text-align: justify;
+.location-view {
+  height: calc(100vh - 85px);
+  display: grid;
+  grid-template-areas: 'select-area map-area';
+  grid-template-columns: 1fr 3fr;
+  margin-bottom: 58px;
+  margin-right: 44px;
 }
 
-.location-img {
-  display: block;
-  padding-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
+.select-area {
+  grid-area: select-area;
+  position: relative;
+  height: inherit;
+  padding: 0px 12px;
 }
 
-.mapid { height: 180px; }
+.map-area {
+  grid-area: map-area;
+  height: inherit;
+}
+
+.leaflet-container {
+  height: inherit;
+  width: inherit;
+}
