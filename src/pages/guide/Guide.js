@@ -124,12 +124,12 @@ const Guide = () => {
             imageUrl='https://scontent-mia3-2.xx.fbcdn.net/v/t1.0-0/c0.22.200.200/p200x200/19657098_1590440634322430_6778794518210222356_n.jpg?_nc_cat=0&oh=b417434c8f579cab959c432089fee105&oe=5C083FE5'
             linkTo='https://www.facebook.com/Whalebone-Seafood-Market-611160558917114/'
           />
-          <RecommendationCard
-            title=""
-            description=""
-            imageUrl=''
-            linkTo=''
-          />
+          {/*<RecommendationCard*/}
+            {/*title=""*/}
+            {/*description=""*/}
+            {/*imageUrl=''*/}
+            {/*linkTo=''*/}
+          {/*/>*/}
         </div>
       </div>
     </div>

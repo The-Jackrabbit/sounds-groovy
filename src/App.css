@@ -53,6 +53,7 @@ button:hover {
 
 .page-container {
   padding-top: 58px;
+  background-color: var(--color-white);
 }
 
 /* custom */
