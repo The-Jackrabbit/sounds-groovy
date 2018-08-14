@@ -48,229 +48,269 @@ const Amenities = () => {
   return (
     <div className="topic">
 
-      <div className="intro">
-        <img alt="Amenities-img" src={deck_life}/>
-        <h2>
-          Amenities ... provide comfort, convenience, and/ or pleasure!
-        </h2>
-        <p>
-          Sounds Groovy OBX seeks to provide many amenities! Whether you are
-          on vacation or visiting the Outer Banks for a family wedding, Sounds
-          Groovy OBX has tried to think of your every need! Comfort and
-          convenience is what we want for our visitors to Sounds Groovy OBX.
-          The following are a few of the amenities you may find during your visit.
-        </p>
-      </div>
+      <div className="toc">
+        <div className="button-wrapper">
+          <h2>Why Choose Sounds Groovy OBX?</h2>
 
-      <div className="grid-content-sm">
-        <h2>General</h2>
+          <button>
+            <a href="#general">General</a>
+          </button>
+          <br/>
 
-        <div className="grid-item">
-          <img alt="Amenity-img" src={king}/>
-          <p>One King Bed</p>
-        </div>
+          <button>
+            <a href="#safety">Safety</a>
+          </button>
+          <br/>
 
-        <div className="grid-item">
-          <img alt="Amenity-img" src={queen}/>
-          <p>Two Queen Beds</p>
-        </div>
+          <button>
+            <a href="#kitchen">Kitchen</a>
+          </button>
+          <br/>
 
-        <div className="grid-item">
-          <img alt="Amenity-img" src={sheets}/>
-          <p>Sheets, Bath & Beach Towels</p>
-        </div>
+          <button>
+            <a href="#recreational">Recreational</a>
+          </button>
+          <br/>
 
-        <div className="grid-item">
-          <img alt="Amenity-img" src={wifi}/>
-          <p>Wifi</p>
-        </div>
-
-        <div className="grid-item">
-          <img alt="Amenity-img" src={tv}/>
-          <p>Television</p>
-        </div>
-
-        <div className="grid-item">
-          <img alt="Amenity-img" src={cable}/>
-          <p>Cable Television</p>
-        </div>
-
-        <div className="grid-item">
-          <img alt="Amenity-img" src={heat}/>
-          <p>Heat & Air Conditioning</p>
-        </div>
-
-        <div className="grid-item">
-          <img alt="Amenity-img" src={parking}/>
-          <p>Free Parking</p>
+          <button>
+            <a href="#personal">Personal Care</a>
+          </button>
         </div>
       </div>
 
-      <div className="grid-content-sm">
-        <h2>Safety</h2>
 
-        <div className="grid-item">
-          <img alt="Amenity-img" src={smoke}/>
-          <p>Smoke Detectors</p>
+      <div className="content">
+
+        <div className="intro">
+          <img alt="Amenities-img" src={deck_life}/>
+          <h1 align="center">
+            Amenities ... comfort and convenience!
+          </h1>
+          <p>
+            Sounds Groovy OBX provides many amenities! Whether you are
+            on vacation or visiting the Outer Banks for a family wedding, Sounds
+            Groovy OBX has tried to think of your every need! Comfort and
+            convenience is what we want for our visitors to Sounds Groovy OBX.
+            The following are a few of the amenities you may find during your visit.
+          </p>
         </div>
 
-        <div className="grid-item">
-          <img alt="Amenity-img" src={monoxide}/>
-          <p>Carbon Monoxide Detectors</p>
-        </div>
+        <div className="main">
 
-        <div className="grid-item">
-          <img alt="Amenity-img" src={first_aid_kit}/>
-          <p>First Aid Kit</p>
-        </div>
+          <span className="anchor" id="general"></span>
+          <div id="general" className="grid-main-sm">
+            <h2>General</h2>
 
-        <div className="grid-item">
-          <img alt="Amenity-img" src={fire_extinguisher}/>
-          <p>Fire Extinguishers on all levels</p>
-        </div>
+            <div className="grid-item">
+              <img alt="Amenity-img" src={king}/>
+              <p>One King Bed</p>
+            </div>
 
-        <div className="grid-item">
-          <img alt="Amenity-img" src={flashlight}/>
-          <p>Flashlights in every bedroom</p>
+            <div className="grid-item">
+              <img alt="Amenity-img" src={queen}/>
+              <p>Two Queen Beds</p>
+            </div>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={sheets}/>
+              <p>Sheets, Bath & Beach Towels</p>
+            </div>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={wifi}/>
+              <p>Wifi</p>
+            </div>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={tv}/>
+              <p>Television</p>
+            </div>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={cable}/>
+              <p>Cable Television</p>
+            </div>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={heat}/>
+              <p>Heat & Air Conditioning</p>
+            </div>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={parking}/>
+              <p>Free Parking</p>
+            </div>
+          </div>
+
+          <span className="anchor" id="safety"></span>
+          <div id="safety" className="grid-main-sm">
+            <h2>Safety</h2>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={smoke}/>
+              <p>Smoke Detectors</p>
+            </div>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={monoxide}/>
+              <p>Carbon Monoxide Detectors</p>
+            </div>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={first_aid_kit}/>
+              <p>First Aid Kit</p>
+            </div>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={fire_extinguisher}/>
+              <p>Fire Extinguishers on all levels</p>
+            </div>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={flashlight}/>
+              <p>Flashlights in every bedroom</p>
+            </div>
+          </div>
+
+          <span className="anchor" id="kitchen"></span>
+          <div id="kitchen"/>
+          <div className="grid-main-sm">
+            <h2>Kitchen</h2>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={kitchen}/>
+              <p>Generously Stocked Kitchen</p>
+            </div>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={keurig}/>
+              <p>Keurig</p>
+            </div>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={toaster}/>
+              <p>Toaster Oven</p>
+            </div>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={iblender}/>
+              <p>Immersion Blender</p>
+            </div>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={blender}/>
+              <p>Blender</p>
+            </div>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={crockpot}/>
+              <p>Crockpot</p>
+            </div>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={spices}/>
+              <p>Spices & Condiments</p>
+            </div>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={corkscrew}/>
+              <p>Wine Opener</p>
+            </div>
+          </div>
+
+          <span className="anchor" id="recreational"></span>
+          <div id="recreational" className="grid-main-sm">
+            <h2>Recreational</h2>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={umbrella}/>
+              <p>Beach Chairs & Umbrellas</p>
+            </div>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={sheets}/>
+              <p>Beach Towels</p>
+            </div>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={pool}/>
+              <p>Community Pool</p>
+            </div>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={ramp}/>
+              <p>Community Boat Ramp</p>
+            </div>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={rods}/>
+              <p>Fishing Rods</p>
+            </div>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={fishing}/>
+              <p>Fishing Dock</p>
+            </div>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={boat}/>
+              <p>Dock for Water Toys</p>
+            </div>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={jetski}/>
+              <p>Trailer Parking</p>
+            </div>
+          </div>
+
+          <span className="anchor" id="personal"></span>
+          <div id="personal" className="grid-main-sm">
+            <h2>Personal Care</h2>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={hair_dryer}/>
+              <p>Hair Dryer</p>
+            </div>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={mirror}/>
+              <p>Dressing mirror</p>
+            </div>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={mmirror}/>
+              <p>Lighted makeup mirror</p>
+            </div>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={shampoo}/>
+              <p>Shampoo & Conditioner</p>
+            </div>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={soap}/>
+              <p>Body Wash</p>
+            </div>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={hangar}/>
+              <p>Hangars</p>
+            </div>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={washer}/>
+              <p>Washer & Dryer</p>
+            </div>
+
+            <div className="grid-item">
+              <img alt="Amenity-img" src={iron}/>
+              <p>Iron & Ironing Board</p>
+            </div>
+
+          </div>
         </div>
 
       </div>
-
-      <div className="grid-content-sm">
-        <h2>Kitchen</h2>
-
-        <div className="grid-item">
-          <img alt="Amenity-img" src={kitchen}/>
-          <p>Generously Stocked Kitchen</p>
-        </div>
-
-        <div className="grid-item">
-          <img alt="Amenity-img" src={keurig}/>
-          <p>Keurig</p>
-        </div>
-
-        <div className="grid-item">
-          <img alt="Amenity-img" src={toaster}/>
-          <p>Toaster Oven</p>
-        </div>
-
-        <div className="grid-item">
-          <img alt="Amenity-img" src={iblender}/>
-          <p>Immersion Blender</p>
-        </div>
-
-        <div className="grid-item">
-          <img alt="Amenity-img" src={blender}/>
-          <p>Blender</p>
-        </div>
-
-        <div className="grid-item">
-          <img alt="Amenity-img" src={crockpot}/>
-          <p>Crockpot</p>
-        </div>
-
-        <div className="grid-item">
-          <img alt="Amenity-img" src={spices}/>
-          <p>Spices & Condiments</p>
-        </div>
-
-        <div className="grid-item">
-          <img alt="Amenity-img" src={corkscrew}/>
-          <p>Wine Opener</p>
-        </div>
-
-      </div>
-
-      <div className="grid-content-sm">
-        <h2>Recreational</h2>
-
-        <div className="grid-item">
-          <img alt="Amenity-img" src={umbrella}/>
-          <p>Beach Chairs & Umbrellas</p>
-        </div>
-
-        <div className="grid-item">
-          <img alt="Amenity-img" src={sheets}/>
-          <p>Beach Towels</p>
-        </div>
-
-        <div className="grid-item">
-          <img alt="Amenity-img" src={pool}/>
-          <p>Community Pool</p>
-        </div>
-
-        <div className="grid-item">
-          <img alt="Amenity-img" src={ramp}/>
-          <p>Community Boat Ramp</p>
-        </div>
-
-        <div className="grid-item">
-          <img alt="Amenity-img" src={rods}/>
-          <p>Fishing Rods</p>
-        </div>
-
-        <div className="grid-item">
-          <img alt="Amenity-img" src={fishing}/>
-          <p>Fishing Dock</p>
-        </div>
-
-        <div className="grid-item">
-          <img alt="Amenity-img" src={boat}/>
-          <p>Dock for Water Toys</p>
-        </div>
-
-        <div className="grid-item">
-          <img alt="Amenity-img" src={jetski}/>
-          <p>Trailer Parking</p>
-        </div>
-
-      </div>
-
-      <div className="grid-content-sm">
-        <h2>Personal Care</h2>
-
-        <div className="grid-item">
-          <img alt="Amenity-img" src={hair_dryer}/>
-          <p>Hair Dryer</p>
-        </div>
-
-        <div className="grid-item">
-          <img alt="Amenity-img" src={mirror}/>
-          <p>Dressing mirror</p>
-        </div>
-
-        <div className="grid-item">
-          <img alt="Amenity-img" src={mmirror}/>
-          <p>Lighted makeup mirror</p>
-        </div>
-
-        <div className="grid-item">
-          <img alt="Amenity-img" src={shampoo}/>
-          <p>Shampoo & Conditioner</p>
-        </div>
-
-        <div className="grid-item">
-          <img alt="Amenity-img" src={soap}/>
-          <p>Body Wash</p>
-        </div>
-
-        <div className="grid-item">
-          <img alt="Amenity-img" src={hangar}/>
-          <p>Hangars</p>
-        </div>
-
-        <div className="grid-item">
-          <img alt="Amenity-img" src={washer}/>
-          <p>Washer & Dryer</p>
-        </div>
-
-        <div className="grid-item">
-          <img alt="Amenity-img" src={iron}/>
-          <p>Iron & Ironing Board</p>
-        </div>
-
-      </div>
-
     </div>
   );
 };

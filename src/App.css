@@ -9,12 +9,19 @@
   --color-black: #292F36;
 }
 
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
 /* standard elements */
 body {
   margin: 0px;
+  height: 100%;
+  overflow: auto;
 }
 
-a, p, div, span, h1, h2, h3, h4, h5, h6 {
+a, p, div, span {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--color-black);
 }
@@ -42,6 +49,9 @@ button {
   text-transform: uppercase;
   padding: 12px;
   color: var(--color-gray);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 200px;
 }
 
 button:hover {
@@ -52,32 +62,57 @@ button:hover {
 }
 
 .page-container {
-  padding-top: 58px;
+  /*padding-top: 58px;*/
   background-color: var(--color-white);
 }
 
-/* custom */
+.leaflet-container {
+  height: inherit;
+  width: inherit;
+}
 
-.header-img {
+/* custom */
+.anchor{
   display: block;
-  padding-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
+  height: 115px; /*same height as header*/
+  margin-top: -115px; /*same height as header*/
+  visibility: hidden;
 }
 
 .topic {
-  margin: 10px;
+  /* area under the header on topic pages (not on the home page) */
+  display: grid;
+  grid-template-columns: 22% 78%;
 }
 
 .topic h2 {
-  text-align: left;
+  text-align: center;
 }
 
-.topic .intro {
+.topic .toc {
+  position: sticky;
+  top: 40px;
+  height: calc(100vh - 60px);
+  box-sizing: border-box;
+  display: table;
+  width:100%;
+}
+
+.topic .toc .button-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.topic .content {
+  /*margin: 5px;*/
+  overflow: auto;
+}
+
+.topic .content .intro {
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 90%;
   padding-top: 20px;
   padding-right: 30px;
   padding-left: 30px;
@@ -86,7 +121,7 @@ button:hover {
   text-align: justify;
 }
 
-.topic .intro img {
+.topic .content .intro img {
   display: block;
   padding-top: 10px;
   margin-left: auto;
@@ -94,15 +129,31 @@ button:hover {
   width: 60%;
 }
 
-.topic .intro h2 {
+.topic .content .intro h2 {
   text-align: center;
 }
 
-.topic .content-sm {
+.topic .content .main {
+  margin: 0;
+}
+
+.topic .content .main .map-view {
+  top: 60px;
+  width: 97%;
+  padding-top: 68px;
+  height: calc(100vh - 85px);
+}
+
+.topic .content .main .map-view .map-area {
+  height: inherit;
+  top: inherit;
+}
+
+.topic .content .main .main-sm {
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: inherit;
   padding-top: 10px;
   padding-right: 30px;
   padding-left: 30px;
@@ -111,7 +162,7 @@ button:hover {
   text-align: justify;
 }
 
-.topic .grid-content-sm {
+.topic .content .main .grid-main-sm {
   display: grid;
   grid-auto-rows: 130px;
   grid-gap: 10px;
@@ -122,17 +173,16 @@ button:hover {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
-  height: auto;
   border: 1px solid #eee;
   box-shadow: 0 2px #ccc;
 }
 
-.topic .grid-content-sm h2 {
+.topic .content .main .grid-main-sm h2 {
   padding-top: 22px;
   text-align: left;
 }
 
-.topic .grid-content-sm .grid-item {
+.topic .content .main .grid-main-sm .grid-item {
   font-size: 12px;
   text-align: center;
   text-transform: capitalize;
@@ -141,7 +191,7 @@ button:hover {
   padding-bottom: 3px;
 }
 
-.topic .grid-content-sm .grid-item img {
+.topic .content .main .grid-main-sm .grid-item img {
   display: block;
   padding-top: 10px;
   margin-left: auto;
@@ -149,18 +199,23 @@ button:hover {
   width: 60%;
 }
 
-.topic .content-lg {
+.topic .content .main .main-lg {
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  width: 75%;
+  width: 100%;
   padding-top: 10px;
   border: 1px solid #eee;
   box-shadow: 0 2px #ccc;
   text-align: justify;
 }
 
-.topic .content-lg .grid-content-lg {
+.topic .content .main .main-lg h2 {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.topic .content  .main .main-lg .grid-main-lg {
   display: grid;
   grid-auto-rows: 320px;
   grid-template-columns: auto auto auto;
@@ -168,18 +223,19 @@ button:hover {
   justify-items: center;
 }
 
-.topic .content-lg .grid-content-lg h2 {
+.topic .content .main .main-lg .grid-main-lg h2 {
   padding-bottom: 22px;
   text-align: left;
 }
 
-.topic .content-lg .grid-content-lg .grid-item {
+.topic .content .main .main-lg .grid-main-lg .grid-item {
   font-size: 12px;
   text-align: center;
   text-transform: capitalize;
+  height: 1000px;
 }
 
-.topic .content-lg .grid-content-lg .grid-item img {
+.topic .content .main .main-lg .grid-main-lg .grid-item img {
   display: block;
   padding-top: 10px;
   margin-left: auto;

@@ -20,10 +20,10 @@ const Header = ({ location }) => {
       </Link>
       <CustomLink to='/aboutus' current={current}>About Us</CustomLink>
       <CustomLink to='/location' current={current}>Location</CustomLink>
-      {/*<CustomLink to='/gallery' current={current}>Gallery</CustomLink>*/}
       <CustomLink to='/amenities' current={current}>Amenities</CustomLink>
       <CustomLink to='/rules' current={current}>Rules, Groovy!</CustomLink>
       <CustomLink to='/guide' current={current}>OBX Guide</CustomLink>
+      {/*<CustomLink to='/gallery' current={current}>Gallery</CustomLink>*/}
       {/*<CustomLink to='/guests' current={current}>Groovy Guests!</CustomLink>*/}
       {/*<CustomLink to='/faq' current={current}>FAQ</CustomLink>*/}
       {/*<CustomLink to='/blog' current={current}>BLOG</CustomLink>*/}

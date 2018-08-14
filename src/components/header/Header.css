@@ -17,6 +17,3 @@
 .header-container a:first-child {
   padding-left: 24px;
 }
-.airbnb {
-  color: var(--color-red) !important;
-}
