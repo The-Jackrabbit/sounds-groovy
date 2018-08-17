@@ -44,14 +44,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 button {
-  background-color: #FFFDF9;
-  border: var(--color-black) solid 1px;
+  background-color: var(--color-white);
+  /*border: var(--color-black) solid 1px;*/
   text-transform: uppercase;
   padding: 12px;
   color: var(--color-gray);
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 200px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 120px;
 }
 
 button:hover {
@@ -82,7 +82,8 @@ button:hover {
 .topic {
   /* area under the header on topic pages (not on the home page) */
   display: grid;
-  grid-template-columns: 22% 78%;
+  grid-template-columns: 1fr 3fr;
+  /*grid-template-columns: 14% 78%;*/
 }
 
 .topic h2 {
@@ -96,9 +97,15 @@ button:hover {
   box-sizing: border-box;
   display: table;
   width:100%;
+  margin: 6%;
 }
 
 .topic .toc .button-wrapper {
+  /*display: grid;*/
+  /*grid-template-columns: 1fr;*/
+  /*grid-template-rows: minmax(200px, auto);*/
+  /*grid-auto-rows: minmax(100px, auto);*/
+  /*grid-gap: 20px;*/
   display: table-cell;
   vertical-align: middle;
   text-align: center;
@@ -107,6 +114,7 @@ button:hover {
 .topic .content {
   /*margin: 5px;*/
   overflow: auto;
+  margin: 6%;
 }
 
 .topic .content .intro {
@@ -164,10 +172,10 @@ button:hover {
 
 .topic .content .main .grid-main-sm {
   display: grid;
-  grid-auto-rows: 130px;
+  grid-auto-rows: 1fr;
   grid-gap: 10px;
   justify-items: center;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
   margin-top: 20px;
   margin-bottom: 10px;
   margin-left: auto;

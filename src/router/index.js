@@ -11,16 +11,17 @@ import Rules from '../pages/rules/Rules';
 import Location from '../pages/location/Location';
 import PageNotFound from '../pages/page-not-found/PageNotFound';
 
+
 const Routes = () => (
   <Switch>
     <Route exact path="/" component={Home}/>
-    <Route exact path="/aboutus/" component={AboutUs} />
-    <Route exact path="/amenities/" component={Amenities} />
-    <Route exact path="/guide/" component={Guide} />
-    <Route exact path="/rules/" component={Rules} />
-    <Route exact path="/location/" component={Location} />
+    <Route exact path="/aboutus/" component={AboutUs}/>
+    <Route exact path="/amenities/" component={Amenities}/>
+    <Route exact path="/guide/" component={Guide}/>
+    <Route exact path="/rules/" component={Rules}/>
+    <Route exact path="/location/" component={Location}/>
     {/*<Route exact path="/contactus/" component={ContactUs} />*/}
-    <Route path="/" component={PageNotFound} />
+    <Route path="/" component={PageNotFound}/>
   </Switch>
 );
 
