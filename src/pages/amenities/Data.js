@@ -62,7 +62,7 @@ export const intro = {
 export const sections = [
   // order counts
   {
-    id: 1,
+    id: 'general',
     label: 'General',
     linkref: '#general'
   },

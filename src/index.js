@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './semantic/semantic.min.css';
-
+import './semantic_link/dist/semantic.min.css';
 import createHistory from 'history/createBrowserHistory';
 import { Router } from 'react-router';
 import App from './App';

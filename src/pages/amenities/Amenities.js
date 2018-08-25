@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../App.css';
 import Amenity from './Amenity';
-import {intro, sections, general, safety, cooking, recreational, personal} from './data';
+import {intro, sections, general, safety, cooking, recreational, personal} from './Data';
 import Intro from '../../components/Intro';
 import Linklist from '../../components/Linklist';
 
@@ -13,30 +13,6 @@ const Amenities = () => {
         <div className="button-wrapper">
           <h2>Why Choose Sounds Groovy OBX?</h2>
           <Linklist mylinks={sections} />
-
-          {/*<button>*/}
-          {/*<a href="#general">General</a>*/}
-          {/*</button>*/}
-          {/*<br/>*/}
-
-          {/*<button>*/}
-          {/*<a href="#safety">Safety</a>*/}
-          {/*</button>*/}
-          {/*<br/>*/}
-
-          {/*<button>*/}
-          {/*<a href="#kitchen">Kitchen</a>*/}
-          {/*</button>*/}
-          {/*<br/>*/}
-
-          {/*<button>*/}
-          {/*<a href="#recreational">Recreational</a>*/}
-          {/*</button>*/}
-          {/*<br/>*/}
-
-          {/*<button>*/}
-          {/*<a href="#personal">Personal Care</a>*/}
-          {/*</button>*/}
         </div>
       </div>
 

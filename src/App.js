@@ -1,18 +1,23 @@
 import React from 'react';
-import './App.css';
-
-import Header from './components/header/Header';
 import Routes from './router';
+import NavMenu from './components/NavMenu';
+import {Grid} from 'semantic-ui-react';
 
 const App = () => {
   return (
     <div id="top">
-      <Header />
-      <div className="page-container">
-        <Routes />
-      </div>
+      <Grid celled padded style={{height: '100vh'}}>
+        <Grid.Row style={{height: '9%', backgroundColor: 'yellow'}}>
+          <NavMenu/>
+        </Grid.Row>
+        <Grid.Row style={{height: '91%', backgroundColor: 'purple'}}>
+          <Routes/>
+        </Grid.Row>
+      </Grid>
     </div>
   );
 };
 
 export default App;
+
+// paddingTop: '65px',

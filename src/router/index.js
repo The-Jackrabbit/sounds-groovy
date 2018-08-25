@@ -4,9 +4,8 @@ import { Switch, Route } from 'react-router-dom';
 // Pages
 import AboutUs from '../pages/about-us/AboutUs';
 import Amenities from '../pages/amenities/Amenities';
-import ContactUs from '../pages/contact-us/ContactUs';
 import Guide from '../pages/guide/Guide';
-import Home from '../pages/home/Home';
+import FrontDoor from '../pages/frontdoor/FrontDoor';
 import Rules from '../pages/rules/Rules';
 import Location from '../pages/location/Location';
 import PageNotFound from '../pages/page-not-found/PageNotFound';
@@ -14,7 +13,8 @@ import PageNotFound from '../pages/page-not-found/PageNotFound';
 
 const Routes = () => (
   <Switch>
-    <Route exact path="/" component={Home}/>
+    {/*<Route exact path="/" component={Home}/>*/}
+    <Route exact path="/" component={FrontDoor}/>
     <Route exact path="/aboutus/" component={AboutUs}/>
     <Route exact path="/amenities/" component={Amenities}/>
     <Route exact path="/guide/" component={Guide}/>

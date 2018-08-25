@@ -19,9 +19,7 @@ function Linklist(props) {
 }
 
 Linklist.propTypes = {
-  mylinks: PropTypes.array.isRequired,
-  // label: PropTypes.string.isRequired,
-  // linkref: PropTypes.string.isRequired,
+  mylinks: PropTypes.array.isRequired
 };
 
 export default Linklist;
