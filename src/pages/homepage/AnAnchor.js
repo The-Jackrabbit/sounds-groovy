@@ -1,17 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import LeftOrRight from './LeftOrRight';
+import {Grid} from 'semantic-ui-react';
 
 const AnAnchor = ({myhref, hdr, src, descr, postleft}) => {
   return (
-    <a href={myhref}>
+    <Grid as='a' href={myhref}>
       <LeftOrRight
         hdr={hdr}
         src={src}
         descr={descr}
         postleft={postleft}
       />
-    </a>
+    </Grid>
   );
 };
 
