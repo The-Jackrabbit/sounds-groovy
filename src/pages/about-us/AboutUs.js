@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../App.css';
-import sound_view from '../../resources/images/vacation-rental-outer-banks-nags-head.jpg';
+import sound_view from '../../resources/images/vacation-rental-outer-banks-nags-head.JPG';
 
 const AboutUs = () => {
   return (

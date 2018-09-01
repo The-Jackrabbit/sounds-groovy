@@ -1,30 +1,31 @@
-import {Divider, Grid, Image, Header, Segment, Container, Responsive} from 'semantic-ui-react';
+import {Grid, Container, Responsive} from 'semantic-ui-react';
 import React from 'react';
 import PropTypes from 'prop-types';
-import NavSideMenu from '../../components/Nav/NavSideMenu';
-import NavTopMenu from '../../components/Nav/NavTopMenu';
 import HomePageButton from './HomePageButton';
+import HomePageImage from './HomePageImage';
 
-const LeftPage = ({ hdr, src, descr }) => {
+const LeftPage = ({hdr, src, descr}) => {
+  let float = 'left';
   return (
     <Container>
-      <Grid padded borderless>
+      <Responsive maxWidth={768}>
+        <Grid columns={1} padded borderless centered style={{padding: '40px 10px 40px 10px'}}>
+          <HomePageImage float={float} src={src}/>
+          <HomePageButton float={float} hdr={hdr} descr={descr}/>
+        </Grid>
+      </Responsive>
 
-          <Responsive {...Responsive.onlyMobile}>
-            <Grid.Row>
-              <Image style={{backgroundSize: 'cover', backgroundPosition: 'center'}} src={src}/>
-            </Grid.Row>
-          </Responsive>
+      <Responsive minWidth={768}>
+        <Grid columns={2} padded borderless>
+          <Grid.Column width={13} floated={float}>
+            <HomePageImage float={float} src={src}/>
+          </Grid.Column>
+          <Grid.Column width={3} verticalAlign='middle' floated={float}>
+            <HomePageButton float={float} hdr={hdr} descr={descr}/>
+          </Grid.Column>
+        </Grid>
+      </Responsive>
 
-          <Responsive minWidth={Responsive.onlyTablet.minWidth}>
-            <Grid.Column width={13} floated='left'>
-              <Image style={{backgroundSize: 'cover', backgroundPosition: 'center', height: 'calc(100vh - 70px)'}} src={src}/>
-            </Grid.Column>
-          </Responsive>
-
-        <HomePageButton float='left' hdr={hdr} descr={descr}/>
-
-      </Grid>
     </Container>
   );
 };

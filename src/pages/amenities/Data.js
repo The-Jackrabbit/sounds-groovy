@@ -1,5 +1,5 @@
 // intro
-import deck_life from '../../resources/images/corolla-duck-beach-rental.png';
+import deck_life from '../../resources/images/corolla-duck-beach-rental.JPG';
 
 // general
 import king from '../../resources/svg/037-bed.svg';

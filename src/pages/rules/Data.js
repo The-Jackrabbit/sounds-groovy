@@ -1,4 +1,4 @@
-import ourhouse from '../../resources/images/beach-house-rental-nags-head.png';
+import ourhouse from '../../resources/images/beach-house-rental-nags-head.JPG';
 
 // cards
 

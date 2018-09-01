@@ -1,6 +1,5 @@
 import React from 'react';
-// import '../../App.css';
-import sunset from '../../resources/images/cottage-vacation-kill-devil-hills.png';
+import sunset from '../../resources/images/cottage-vacation-kill-devil-hills.JPG';
 import RecommendationCard from '../../components/recommendation-card/RecommendationCard';
 import '../../components/recommendation-card/RecommendationCard.css';
 

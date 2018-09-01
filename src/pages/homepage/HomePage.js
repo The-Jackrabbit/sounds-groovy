@@ -3,7 +3,7 @@ import React from 'react';
 import ALink from './ALink';
 import AnAnchor from './AnAnchor';
 
-const FrontDoor = () => {
+const HomePage = () => {
   return (
     <div align='center'>
       {cards.map(c => {
@@ -33,7 +33,7 @@ const FrontDoor = () => {
   );
 };
 
-export default FrontDoor;
+export default HomePage;
 
 /*
  style={{padding: '10px'}}

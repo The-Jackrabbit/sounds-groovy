@@ -1,28 +1,30 @@
-import {Grid, Header, Segment} from 'semantic-ui-react';
+import {Grid, Image, Responsive} from 'semantic-ui-react';
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const HomePageButton = ({ float, hdr, descr }) => {
+const HomePageImage = ({ float, src }) => {
   return (
-    <Grid.Column width={3} verticalAlign='middle' floated={float}>
-      <div align='center'>
-        <p>{descr}</p>
-        <Segment raised circular textAlign='center' style={{width: '80%'}}>
-          <Header>{hdr}</Header>
-        </Segment>
-      </div>
-    </Grid.Column>
+    <div>
+      <Responsive maxWidth={768}>
+        <Image style={{backgroundSize: 'cover', backgroundPosition: 'center'}} src={src}/>
+      </Responsive>
+
+      <Responsive minWidth={768}>
+        <Grid.Column width={13} floated={float}>
+          <Image style={{backgroundSize: 'cover', backgroundPosition: 'center', height: 'calc(100vh - 68px)'}} src={src}/>
+        </Grid.Column>
+      </Responsive>
+    </div>
   );
 };
 
 
-HomePageButton.propTypes = {
+HomePageImage.propTypes = {
   float: PropTypes.string.isRequired,
-  hdr: PropTypes.string.isRequired,
-  descr: PropTypes.string.isRequired,
+  src: PropTypes.string.isRequired,
 };
 
-export default HomePageButton;
+export default HomePageImage;
 
 /*
 height: 'calc(100vh - 60px)',
