@@ -6,8 +6,8 @@ const HomePageButton = ({float, hdr, descr}) => {
   return (
     <div align='center'>
       <p style={{marginTop: '11px'}}>{descr}</p>
-      <Segment padded raised circular textAlign='center' style={{width: '60%'}}>
-        <Header size='small'>{hdr}</Header>
+      <Segment padded raised circular textAlign='center' style={{width: '40%'}}>
+        <Header size='tiny'>{hdr}</Header>
       </Segment>
     </div>
   );

@@ -1,5 +1,4 @@
 import React from 'react';
-
 import NavBar from './components/Nav/NavBar';
 
 const App = () => {
@@ -14,7 +13,4 @@ export default App;
 
 /*
 
-      <Grid centered>
-        <NavBar/>
-      </Grid>
  */

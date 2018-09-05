@@ -8,7 +8,6 @@ import Guide from '../pages/guide/Guide';
 import HomePage from '../pages/homepage/HomePage';
 import Rules from '../pages/rules/Rules';
 import Location from '../pages/location/Location';
-import PageNotFound from '../pages/page-not-found/PageNotFound';
 
 
 const Routes = () => (
@@ -20,8 +19,6 @@ const Routes = () => (
     <Route exact path="/guide/" component={Guide}/>
     <Route exact path="/rules/" component={Rules}/>
     <Route exact path="/location/" component={Location}/>
-    {/*<Route exact path="/contactus/" component={ContactUs} />*/}
-    <Route path="/" component={PageNotFound}/>
     <Route exact path='/airbnb' name='/AirBnB' component={() => window.location = 'https://www.airbnb.com/rooms/26077543'}/>
   </Switch>
 );

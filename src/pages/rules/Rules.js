@@ -1,37 +1,46 @@
 import React from 'react';
-import '../../App.css';
-import Linklist from '../../components/Linklist';
-import {cards, intro, sections} from './Data';
-import Intro from '../../components/Intro';
-import {Card} from 'semantic-ui-react';
+import {intro, sections} from './Data';
+import {Grid} from 'semantic-ui-react';
+import TopIntro from '../../components/TopIntro';
+import CardGroups from '../../components/CardGroups';
 
 
 const Rules = () => {
   return (
-    <div className="topic">
+    <Grid
+      centered={true}
+    >
 
-      <div className="toc">
-        <div className="button-wrapper">
-          <h2>Rules, Groovy!</h2>
-          <Linklist mylinks={sections} />
-        </div>
-      </div>
+      {/*  Intro section of the page  */}
 
-      <div className="content">
-
-        <Intro
-          intro_title={intro.page_title}
-          intro_img={intro.page_img}
-          intro_blurb={intro.page_blurb}
+      <Grid.Row>
+        <TopIntro
+          page_title={intro.page_title}
+          page_img={intro.page_img}
+          page_blurb={intro.page_blurb}
         />
-        <Card.Group raised centered items={cards} itemsPerRow='3'/>
+      </Grid.Row>
 
-        {/*<div className="main">*/}
-          {/*<Card.Group raised centered items={cards} itemsPerRow='3'/>*/}
-        {/*</div>*/}
-      </div>
-    </div>
+      {/*  Start of the Rules sections  */}
+
+      {sections.map((sect, index) =>
+        <div
+          key={index}
+        >
+          <CardGroups
+            sect={sect.sect}
+            imgSize='tiny'
+          />
+        </div>
+      )}
+
+    </Grid>
   );
 };
 
+
 export default Rules;
+
+/*
+
+ */

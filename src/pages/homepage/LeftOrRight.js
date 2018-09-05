@@ -26,7 +26,7 @@ LeftOrRight.propTypes = {
   src: PropTypes.string.isRequired,
   hdr: PropTypes.string.isRequired,
   descr: PropTypes.string.isRequired,
-  postleft: PropTypes.string.isRequired,
+  postleft: PropTypes.bool.isRequired,
 };
 
 export default LeftOrRight;

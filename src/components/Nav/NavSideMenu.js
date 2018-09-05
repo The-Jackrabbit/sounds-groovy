@@ -3,6 +3,7 @@ import Routes from '../../router';
 import {Menu, Segment, Sidebar} from 'semantic-ui-react';
 import NavMenuItems from './NavMenuItems';
 
+
 export default class NavSideMenu extends Component {
   state = {
     visible: false
@@ -23,18 +24,26 @@ export default class NavSideMenu extends Component {
       <div>
 
         <Menu fixed='top'>
-          <Menu.Item position='right' onClick={this.handleButtonClick} icon='bars'/>
+          <Menu.Item
+            position='right'
+            onClick={this.handleButtonClick}
+            icon='bars'
+          />
         </Menu>
 
-        <Sidebar.Pushable as='Segment'>
+        <Sidebar.Pushable
+          as='Segment'
+        >
           <Sidebar
             as={Menu}
             animation='overlay'
-            icon='labeled'
             onHide={this.handleSidebarHide}
             vertical
+            borderless
             visible={visible}
-            width='thin'
+            style={{
+              boxShadow: 'none',
+            }}
           >
             <NavMenuItems/>
           </Sidebar>

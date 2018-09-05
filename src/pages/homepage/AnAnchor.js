@@ -21,7 +21,7 @@ AnAnchor.propTypes = {
   hdr: PropTypes.string.isRequired,
   descr: PropTypes.string.isRequired,
   myhref: PropTypes.string.isRequired,
-  postleft: PropTypes.string.isRequired
+  postleft: PropTypes.bool.isRequired
 };
 
 export default AnAnchor;

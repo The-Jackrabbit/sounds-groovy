@@ -5,13 +5,16 @@ import Routes from '../../router';
 
 const NavTopMenu = () => {
   return (
-    <Grid centered padded>
+    <Grid centered>
       <Grid.Row>
-        <div align='center'>
-          <Menu fixed='top' size='huge' borderless header>
-            <NavMenuItems/>
-          </Menu>
-        </div>
+        <Menu
+          fixed='top'
+          size='large'
+          borderless
+          fluid
+        >
+          <NavMenuItems/>
+        </Menu>
       </Grid.Row>
       <Grid.Row>
         <Routes/>

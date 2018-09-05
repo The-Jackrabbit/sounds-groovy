@@ -22,8 +22,8 @@ export const cards = [
     isalink: true,
     tolink: '/Amenities',
     image_src: deck_life,
-    description: 'Why amenities, of course!!',
-    header: 'Why Choose Sounds Groovy OBX?'
+    description: 'Why Choose Sounds Groovy OBX?',
+    header: 'Why amenities, of course!!',
   },
   {
     id: 'guide',
