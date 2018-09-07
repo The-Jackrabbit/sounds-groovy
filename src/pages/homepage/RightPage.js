@@ -10,7 +10,12 @@ const RightPage = ({hdr, src, descr}) => {
     <Container>
 
       <Responsive maxWidth={768}>
-        <Grid columns={1} padded borderless centered>
+        <Grid
+          columns={1}
+          padded
+          borderless="true"
+          centered
+        >
           <HomePageImage float={float} src={src}/>
           <HomePageButton float={float} hdr={hdr} descr={descr}/>
         </Grid>

@@ -10,6 +10,7 @@ export default class NavSideMenu extends Component {
   };
 
   handleButtonClick = () => this.setState({
+    // toggle
     visible: !this.state.visible
   });
 
@@ -45,7 +46,7 @@ export default class NavSideMenu extends Component {
               boxShadow: 'none',
             }}
           >
-            <NavMenuItems/>
+            <NavMenuItems sidebarVisible={this.handleButtonClick}/>
           </Sidebar>
 
           <Sidebar.Pusher>

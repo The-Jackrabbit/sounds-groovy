@@ -1,54 +1,107 @@
-import React from 'react';
-import {Divider, Dropdown, Menu} from 'semantic-ui-react';
+import React, { Component } from 'react';
+import {Accordion, Menu} from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 
-
-const SubMenuItems = (props) => {
+const MenuItemList = (props) => {
+  const handleButtonClick = () => this.state.sidebarVisible();
   return (
-    <Menu
-      style={{
-        margin: '5px 0px 0px -28px',
-        boxShadow: 'none',
-      }}
-      size='huge'
-      borderless
-    >
-
-      {/* Sets first item to the menu name as a selectable */}
-
-      <Dropdown
-        item
-        text={props.a_menu.name}
-        header
-      >
-        <Dropdown.Menu
-        >
-          <Dropdown.Item
-            href={props.a_menu.to + '#top'}
-            text={props.a_menu.name}
+    <div>
+      {
+        props.a_menu.subs.map(dditem => (
+          <Menu.Item
+            key={dditem}
+            href={props.a_menu.to + '#' + dditem}
+            content={dditem}
+            onClick={this.handleButtonClick}
           />
-          <Divider/>
-          {
-            props.a_menu.subs.map(dditem => (
-              <Dropdown.Item
-                key={dditem}
-                href={props.a_menu.to + '#' + dditem}
-                text={dditem}
-              />
-            ))
-          }
-        </Dropdown.Menu>
-      </Dropdown>
-    </Menu>
+        ))
+      }
+    </div>
   );
 };
 
-SubMenuItems.propTypes = {
+MenuItemList.propTypes = {
   a_menu: PropTypes.object.isRequired,
+  sidebarVisible: PropTypes.func.isRequired,
 };
 
-export default SubMenuItems;
+export default class SubMenuItems extends Component {
+  handleButtonClick = () => this.state.sidebarVisible();
+  state = {activeIndex: 1};
+
+  handleClick = (e, titleProps) => {
+    const {index} = titleProps;
+    const {activeIndex} = this.state;
+    const newIndex = activeIndex === index ? -1 : index;
+
+    this.setState({activeIndex: newIndex});
+
+    // this.setState({ visible: !this.state.visible});
+  };
+
+  render() {
+    const {activeIndex} = this.state;
+
+    return (
+
+      <Accordion
+        as={Menu}
+        vertical
+        // size='huge'
+        // borderless
+        style={{
+          textAlign: 'left'
+        }}
+      >
+
+        <Accordion.Title
+          active={activeIndex === 0}
+          content={this.props.a_menu.name}
+          index={0}
+          onClick={this.handleClick}
+        />
+        <Accordion.Content
+          active={activeIndex === 0}
+          content={
+            <MenuItemList
+              a_menu={this.props.a_menu}
+              sidebarVisible={this.handleClick}
+            />
+          }
+        />
+
+      </Accordion>
+    );
+  }
+};
+
+SubMenuItems.propTypes = {
+  a_menu: PropTypes.object,
+  sidebarVisible: PropTypes.func.isRequired,
+};
 
 /*
-
+        <Dropdown
+          item
+          text={this.props.a_menu.name}
+          header
+        >
+          <Dropdown.Menu
+          >
+            <Dropdown.Item
+              href={this.props.a_menu.to + '#top'}
+              text={this.props.a_menu.name}
+            />
+            <Divider/>
+            {
+              this.props.a_menu.subs.map(dditem => (
+                <Dropdown.Item
+                  key={dditem}
+                  href={this.props.a_menu.to + '#' + dditem}
+                  text={dditem}
+                />
+              ))
+            }
+          </Dropdown.Menu>
+        </Dropdown>
  */

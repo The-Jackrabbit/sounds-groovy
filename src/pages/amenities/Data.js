@@ -17,6 +17,7 @@ import fire_extinguisher from '../../resources/svg/004-fire.svg';
 import flashlight from '../../resources/svg/001-flashlight.svg';
 import smoke from '../../resources/svg/035-smoke-detector.svg';
 import monoxide from '../../resources/svg/036-smoke-detector-1.svg';
+import keypad from '../../resources/svg/050-keypad.svg';
 
 // kitchen
 import keurig from '../../resources/svg/009-coffee-maker.svg';
@@ -51,239 +52,189 @@ import hangar from '../../resources/svg/034-hanger.svg';
 export const intro = {
   page_title: 'Amenities ... comfort and convenience!',
   page_img: deck_life,
-  page_blurb:
-    'Sounds Groovy OBX provides many amenities! Whether you are ' +
-    'on vacation or visiting the Outer Banks for a family wedding, Sounds ' +
-    'Groovy OBX has tried to think of your every need! Comfort and ' +
-    'convenience is what we want for our visitors to Sounds Groovy OBX. ' +
-    'The following are a few of the amenities you may find during your visit.'
+  page_blurb: `
+    Sounds Groovy OBX provides many amenities! Whether you are
+    on vacation or visiting the Outer Banks for a family wedding, Sounds 
+    Groovy OBX has tried to think of your every need! Comfort and 
+    convenience is what we want for our visitors to Sounds Groovy OBX.
+    The following are a few of the amenities you may find during your visit.
+    `
 };
 
 export const sections = [
   // order counts
-  {
-    id: 'general',
-    label: 'General',
-    linkref: '#general'
+  { title: 'General',
+    sect: [
+      {
+        descr: 'One King Bed',
+        imgUrl: king
+      },
+      {
+        descr: 'Two Queen Beds',
+        imgUrl: queen
+      },
+      {
+        descr: 'Sheets, Bath & Beach Towels',
+        imgUrl: sheets
+      },
+      {
+        descr: 'Wifi',
+        imgUrl: wifi
+      },
+      {
+        descr: 'Television',
+        imgUrl: tv
+      },
+      {
+        descr: 'Cable Television',
+        imgUrl: cable
+      },
+      {
+        descr: 'Heat & Air Conditioning',
+        imgUrl: heat
+      },
+      {
+        descr: 'Free Parking',
+        imgUrl: parking
+      }
+    ]
   },
-  {
-    id: 2,
-    label: 'Safety',
-    linkref: '#safety'
+  { title: 'Safety',
+    sect:[
+      {
+        descr: 'Smoke Detectors',
+        imgUrl: smoke
+      },
+      {
+        descr: 'Carbon Monoxide Detectors',
+        imgUrl: monoxide
+      },
+      {
+        descr: 'First Aid Kit',
+        imgUrl: first_aid_kit
+      },
+      {
+        descr: 'Fire Extinguisher - all levels',
+        imgUrl: fire_extinguisher
+      },
+      {
+        descr: 'Flashlight - every bedroom',
+        imgUrl: flashlight
+      },
+      {
+        descr: 'Keyless Entry',
+        imgUrl: keypad
+      }
+    ]
   },
-  {
-    id: 3,
-    label: 'Kitchen',
-    linkref: '#kitchen'
+  { title: 'Kitchen',
+    sect:[
+      {
+        descr: 'Generously Stocked Kitchen',
+        imgUrl: kitchen
+      },
+      {
+        descr: 'Keurig',
+        imgUrl: keurig
+      },
+      {
+        descr: 'Toaster Oven',
+        imgUrl: toaster
+      },
+      {
+        descr: 'Immersion Blender',
+        imgUrl: iblender
+      },
+      {
+        descr: 'Blender',
+        imgUrl: blender
+      },
+      {
+        descr: 'Crockpot',
+        imgUrl: crockpot
+      },
+      {
+        descr: 'Spices & Condiments',
+        imgUrl: spices
+      },
+      {
+        descr: 'Wine Opener',
+        imgUrl: corkscrew
+      },
+    ]
   },
-  {
-    id: 4,
-    label: 'Recreational',
-    linkref: '#recreational'
+  { title: 'Recreational',
+    sect:[
+      {
+        descr: 'Beach Chairs & Umbrellas',
+        imgUrl: umbrella
+      },
+      {
+        descr: 'Beach Towels',
+        imgUrl: sheets
+      },
+      {
+        descr: 'Community Pool',
+        imgUrl: pool
+      },
+      {
+        descr: 'Community Boat Ramp',
+        imgUrl: ramp
+      },
+      {
+        descr: 'Fishing Rods',
+        imgUrl: rods
+      },
+      {
+        descr: 'Fishing Dock',
+        imgUrl: fishing
+      },
+      {
+        descr: 'Dock for Water Toys',
+        imgUrl: boat
+      },
+      {
+        descr: 'Trailer Parking',
+        imgUrl: jetski
+      },
+    ]
   },
-  {
-    id: 5,
-    label: 'Personal Care',
-    linkref: '#personal'
-  }
-];
-
-export const general = [
-  {
-    id: 1,
-    item_descr: 'One King Bed',
-    item_img: king
-  },
-  {
-    id: 2,
-    item_descr: 'Two Queen Beds',
-    item_img: queen
-  },
-  {
-    id: 3,
-    item_descr: 'Sheets, Bath & Beach Towels',
-    item_img: sheets
-  },
-  {
-    id: 4,
-    item_descr: 'Wifi',
-    item_img: wifi
-  },
-  {
-    id: 5,
-    item_descr: 'Television',
-    item_img: tv
-  },
-  {
-    id: 6,
-    item_descr: 'Cable Television',
-    item_img: cable
-  },
-  {
-    id: 7,
-    item_descr: 'Heat & Air Conditioning',
-    item_img: heat
-  },
-  {
-    id: 8,
-    item_descr: 'Free Parking',
-    item_img: parking
-  }
-];
-
-export const safety = [
-  {
-    id: 1,
-    item_descr: 'Smoke Detectors',
-    item_img: smoke
-  },
-  {
-    id: 2,
-    item_descr: 'Carbon Monoxide Detectors',
-    item_img: monoxide
-  },
-  {
-    id: 3,
-    item_descr: 'First Aid Kit',
-    item_img: first_aid_kit
-  },
-  {
-    id: 4,
-    item_descr: 'Fire Extinguisher - all levels',
-    item_img: fire_extinguisher
-  },
-  {
-    id: 5,
-    item_descr: 'Flashlight - every bedroom',
-    item_img: flashlight
-  },
-];
-
-export const cooking = [
-  {
-    id: 1,
-    item_descr: 'Generously Stocked Kitchen',
-    item_img: kitchen
-  },
-  {
-    id: 2,
-    item_descr: 'Keurig',
-    item_img: keurig
-  },
-  {
-    id: 3,
-    item_descr: 'Toaster Oven',
-    item_img: toaster
-  },
-  {
-    id: 4,
-    item_descr: 'Immersion Blender',
-    item_img: iblender
-  },
-  {
-    id: 5,
-    item_descr: 'Blender',
-    item_img: blender
-  },
-  {
-    id: 6,
-    item_descr: 'Crockpot',
-    item_img: crockpot
-  },
-  {
-    id: 7,
-    item_descr: 'Spices & Condiments',
-    item_img: spices
-  },
-  {
-    id: 8,
-    item_descr: 'Wine Opener',
-    item_img: corkscrew
-  },
-];
-
-export const recreational = [
-  {
-    id: 1,
-    item_descr: 'Beach Chairs & Umbrellas',
-    item_img: umbrella
-  },
-  {
-    id: 2,
-    item_descr: 'Beach Towels',
-    item_img: sheets
-  },
-  {
-    id: 3,
-    item_descr: 'Community Pool',
-    item_img: pool
-  },
-  {
-    id: 4,
-    item_descr: 'Community Boat Ramp',
-    item_img: ramp
-  },
-  {
-    id: 5,
-    item_descr: 'Fishing Rods',
-    item_img: rods
-  },
-  {
-    id: 6,
-    item_descr: 'Fishing Dock',
-    item_img: fishing
-  },
-  {
-    id: 7,
-    item_descr: 'Dock for Water Toys',
-    item_img: boat
-  },
-  {
-    id: 8,
-    item_descr: 'Trailer Parking',
-    item_img: jetski
+  { title: 'Personal Care',
+    sect:[
+      {
+        descr: 'Hair Dryer',
+        imgUrl: hair_dryer
+      },
+      {
+        descr: 'Dressing mirror',
+        imgUrl: mirror
+      },
+      {
+        descr: 'Lighted makeup mirror',
+        imgUrl: mmirror
+      },
+      {
+        descr: 'Shampoo & Conditioner',
+        imgUrl: shampoo
+      },
+      {
+        descr: 'Body Wash',
+        imgUrl: soap
+      },
+      {
+        descr: 'Hangars',
+        imgUrl: hangar
+      },
+      {
+        descr: 'Washer & Dryer',
+        imgUrl: washer
+      },
+      {
+        descr: 'Iron & Ironing Board',
+        imgUrl: iron
+      },
+    ]
   },
 ];
 
-export const personal = [
-  {
-    id: 1,
-    item_descr: 'Hair Dryer',
-    item_img: hair_dryer
-  },
-  {
-    id: 2,
-    item_descr: 'Dressing mirror',
-    item_img: mirror
-  },
-  {
-    id: 3,
-    item_descr: 'Lighted makeup mirror',
-    item_img: mmirror
-  },
-  {
-    id: 4,
-    item_descr: 'Shampoo & Conditioner',
-    item_img: shampoo
-  },
-  {
-    id: 5,
-    item_descr: 'Body Wash',
-    item_img: soap
-  },
-  {
-    id: 6,
-    item_descr: 'Hangars',
-    item_img: hangar
-  },
-  {
-    id: 7,
-    item_descr: 'Washer & Dryer',
-    item_img: washer
-  },
-  {
-    id: 8,
-    item_descr: 'Iron & Ironing Board',
-    item_img: iron
-  },
-];
+

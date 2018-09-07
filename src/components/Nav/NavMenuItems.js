@@ -1,12 +1,15 @@
 import React from 'react';
 import {Grid, Image, Menu} from 'semantic-ui-react';
+import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 import logo from '../../resources/logo.svg';
 import SubMenuItems from './SubMenuItems';
 import {menu_lists} from './Data';
 
 
-const NavMenuItems = () => {
+const NavMenuItems = (props) => {
+  const handleButtonClick = () => props.sidebarVisible();
+
   return <Grid
     centered
     padded
@@ -16,6 +19,7 @@ const NavMenuItems = () => {
       as={Link}
       to='/'
       header
+      onClick={handleButtonClick}
     >
       <Image
         centered
@@ -32,6 +36,7 @@ const NavMenuItems = () => {
     <Menu.Item
       key='airbnb'
       header
+      onClick={handleButtonClick}
       href='https://www.airbnb.com/rooms/26077543'
       style={{
         textAlign: 'left',
@@ -47,6 +52,7 @@ const NavMenuItems = () => {
           return <SubMenuItems
             key={a_menu.name}
             a_menu={a_menu}
+            sidebarVisible={this.sidebarVisible}
           />;
         } else {
           return <Menu.Item
@@ -55,6 +61,7 @@ const NavMenuItems = () => {
             as={Link}
             to={a_menu.to}
             name={a_menu.name}
+            onClick={handleButtonClick}
             style={{
               textAlign: 'left',
               margin: '0px 0px 0px -10px',
@@ -68,6 +75,10 @@ const NavMenuItems = () => {
   </Grid>;
 };
 
+
+NavMenuItems.propTypes = {
+  sidebarVisible: PropTypes.func.isRequired,
+};
 
 export default NavMenuItems;
 

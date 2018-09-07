@@ -9,7 +9,13 @@ const LeftPage = ({hdr, src, descr}) => {
   return (
     <Container>
       <Responsive maxWidth={768}>
-        <Grid columns={1} padded borderless centered style={{padding: '40px 10px 40px 10px'}}>
+        <Grid
+          columns={1}
+          padded
+          borderless="true"
+          centered
+          style={{padding: '40px 10px 40px 10px'}}
+        >
           <HomePageImage float={float} src={src}/>
           <HomePageButton float={float} hdr={hdr} descr={descr}/>
         </Grid>

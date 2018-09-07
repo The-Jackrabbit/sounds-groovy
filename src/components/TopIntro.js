@@ -9,7 +9,7 @@ const TopIntro = (props) => {
       align='center'
     >
       <Item
-        centered={true}
+        centered={'true'}
         style={{
           margin: '50px 0px 20px 0px',
           width: '80%'

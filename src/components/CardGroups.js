@@ -7,6 +7,7 @@ const CardGroups = (props) => {
   return (
     <Card.Group
       centered
+      itemsPerRow={props.numPerRow}
     >
       {/*  Handles each Place in the Guide section  */}
       {
@@ -26,7 +27,10 @@ const CardGroups = (props) => {
                 size={props.imgSize}
               />
               <Card.Description
-                as='h3'
+                // as='h4'
+                style={{
+                  paddingTop:'11px'
+                }}
                 content={card_data.descr}
               />
             </Card.Content>
@@ -38,9 +42,15 @@ const CardGroups = (props) => {
 };
 
 
+
+CardGroups.defaultProps = {
+  numPerRow: '2',
+};
+
 CardGroups.propTypes = {
-  sect: PropTypes.object.isRequired,
+  sect: PropTypes.array.isRequired,
   imgSize: PropTypes.string.isRequired,
+  numPerRow: PropTypes.string
 };
 
 export default CardGroups;
