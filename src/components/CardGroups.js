@@ -2,12 +2,14 @@ import React from 'react';
 import {Card, Image} from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 
+// Provides a more sophisticated rendering of content than ImageGroups
 /*  Renders each Guide section  */
 const CardGroups = (props) => {
+  // Card Groups Inputs: name; descr; siteURL; and, imgSize
   return (
     <Card.Group
       centered
-      itemsPerRow={props.numPerRow}
+      // itemsPerRow={props.numPerRow}
     >
       {/*  Handles each Place in the Guide section  */}
       {
@@ -44,7 +46,7 @@ const CardGroups = (props) => {
 
 
 CardGroups.defaultProps = {
-  numPerRow: '2',
+  // numPerRow: '2',
 };
 
 CardGroups.propTypes = {

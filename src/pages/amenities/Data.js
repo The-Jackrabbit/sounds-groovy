@@ -99,34 +99,6 @@ export const sections = [
       }
     ]
   },
-  { title: 'Safety',
-    sect:[
-      {
-        descr: 'Smoke Detectors',
-        imgUrl: smoke
-      },
-      {
-        descr: 'Carbon Monoxide Detectors',
-        imgUrl: monoxide
-      },
-      {
-        descr: 'First Aid Kit',
-        imgUrl: first_aid_kit
-      },
-      {
-        descr: 'Fire Extinguisher - all levels',
-        imgUrl: fire_extinguisher
-      },
-      {
-        descr: 'Flashlight - every bedroom',
-        imgUrl: flashlight
-      },
-      {
-        descr: 'Keyless Entry',
-        imgUrl: keypad
-      }
-    ]
-  },
   { title: 'Kitchen',
     sect:[
       {
@@ -160,6 +132,42 @@ export const sections = [
       {
         descr: 'Wine Opener',
         imgUrl: corkscrew
+      },
+    ]
+  },
+  { title: 'Personal Care',
+    sect:[
+      {
+        descr: 'Hair Dryer',
+        imgUrl: hair_dryer
+      },
+      {
+        descr: 'Dressing mirror',
+        imgUrl: mirror
+      },
+      {
+        descr: 'Lighted makeup mirror',
+        imgUrl: mmirror
+      },
+      {
+        descr: 'Shampoo & Conditioner',
+        imgUrl: shampoo
+      },
+      {
+        descr: 'Body Wash',
+        imgUrl: soap
+      },
+      {
+        descr: 'Hangars',
+        imgUrl: hangar
+      },
+      {
+        descr: 'Washer & Dryer',
+        imgUrl: washer
+      },
+      {
+        descr: 'Iron & Ironing Board',
+        imgUrl: iron
       },
     ]
   },
@@ -199,40 +207,32 @@ export const sections = [
       },
     ]
   },
-  { title: 'Personal Care',
+  { title: 'Safety',
     sect:[
       {
-        descr: 'Hair Dryer',
-        imgUrl: hair_dryer
+        descr: 'Smoke Detectors',
+        imgUrl: smoke
       },
       {
-        descr: 'Dressing mirror',
-        imgUrl: mirror
+        descr: 'Carbon Monoxide Detectors',
+        imgUrl: monoxide
       },
       {
-        descr: 'Lighted makeup mirror',
-        imgUrl: mmirror
+        descr: 'First Aid Kit',
+        imgUrl: first_aid_kit
       },
       {
-        descr: 'Shampoo & Conditioner',
-        imgUrl: shampoo
+        descr: 'Fire Extinguisher - all levels',
+        imgUrl: fire_extinguisher
       },
       {
-        descr: 'Body Wash',
-        imgUrl: soap
+        descr: 'Flashlight - every bedroom',
+        imgUrl: flashlight
       },
       {
-        descr: 'Hangars',
-        imgUrl: hangar
-      },
-      {
-        descr: 'Washer & Dryer',
-        imgUrl: washer
-      },
-      {
-        descr: 'Iron & Ironing Board',
-        imgUrl: iron
-      },
+        descr: 'Keyless Entry',
+        imgUrl: keypad
+      }
     ]
   },
 ];

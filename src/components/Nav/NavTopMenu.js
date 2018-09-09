@@ -3,6 +3,8 @@ import {Grid, Menu} from 'semantic-ui-react';
 import NavMenuItems from './NavMenuItems';
 import Routes from '../../router';
 
+// presents the desktop top bar menu
+
 const NavTopMenu = () => {
   return (
     <Grid centered>

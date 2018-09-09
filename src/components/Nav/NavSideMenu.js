@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import Routes from '../../router';
-import {Menu, Segment, Sidebar} from 'semantic-ui-react';
+import {Menu, Segment, Sidebar, Sticky} from 'semantic-ui-react';
 import NavMenuItems from './NavMenuItems';
 
+// presents the mobile sidebar menu
 
 export default class NavSideMenu extends Component {
   state = {
@@ -18,12 +19,16 @@ export default class NavSideMenu extends Component {
     visible: false
   });
 
+  handleContextRef = contextRef => this.setState({ contextRef })
+
   render() {
-    const {visible} = this.state;
+    const { visible, contextRef } = this.state;
 
     return (
-      <div>
+      <div
+      >
 
+        {/*  shows the hamburger menu button  */}
         <Menu fixed='top'>
           <Menu.Item
             position='right'
@@ -32,22 +37,25 @@ export default class NavSideMenu extends Component {
           />
         </Menu>
 
+        {/*  wraps the sidebar menu as a leftside pushable  */}
         <Sidebar.Pushable
           as='Segment'
         >
-          <Sidebar
-            as={Menu}
-            animation='overlay'
-            onHide={this.handleSidebarHide}
-            vertical
-            borderless
-            visible={visible}
-            style={{
-              boxShadow: 'none',
-            }}
-          >
-            <NavMenuItems sidebarVisible={this.handleButtonClick}/>
-          </Sidebar>
+          <Sticky context={contextRef}>
+            <Sidebar
+              as={Menu}
+              animation='overlay'
+              onHide={this.handleSidebarHide}
+              vertical
+              borderless
+              visible={visible}
+              style={{
+                width: '200px',
+              }}
+            >
+              <NavMenuItems sidebarVisible={this.handleButtonClick}/>
+            </Sidebar>
+          </Sticky>
 
           <Sidebar.Pusher>
             <Segment basic>

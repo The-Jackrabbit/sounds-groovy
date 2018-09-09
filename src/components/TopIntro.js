@@ -11,7 +11,7 @@ const TopIntro = (props) => {
       <Item
         centered={'true'}
         style={{
-          margin: '50px 0px 20px 0px',
+          margin: '65px 0px 20px 0px',
           width: '80%'
         }}
       >

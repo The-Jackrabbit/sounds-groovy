@@ -1,72 +1,60 @@
 import React from 'react';
-import {Grid, Image, Menu} from 'semantic-ui-react';
+import {Grid, Menu, Responsive} from 'semantic-ui-react';
 import PropTypes from 'prop-types';
-import {Link} from 'react-router-dom';
-import logo from '../../resources/logo.svg';
-import SubMenuItems from './SubMenuItems';
 import {menu_lists} from './Data';
+import LogoHeader from './LogoHeader';
+import DropdownSubMenuItems from './DropdownSubMenuItems';
+import AccordionSubMenuItems from './AccordionSubMenuItems';
 
+// works with both sidebar and topbar menu to present the menu items
 
 const NavMenuItems = (props) => {
-  const handleButtonClick = () => props.sidebarVisible();
+  const handleButtonClick = () => {
+    console.log('handling button click');
+    props.sidebarVisible();
+  }
 
   return <Grid
-    centered
     padded
   >
-    <Menu.Item
-      key='logo'
-      as={Link}
-      to='/'
-      header
-      onClick={handleButtonClick}
-    >
-      <Image
-        centered
-        verticalAlign='middle'
-        size='mini'
-        src={logo}
-        style={{
-          marginRight: '1.5em'
-        }}
-      />
-      Sounds Groovy OBX
-    </Menu.Item>
+    {/*  SGOBX brand - logo and name  */}
+    <LogoHeader
+      sidebarVisible={props.sidebarVisible}
+    />
 
-    <Menu.Item
-      key='airbnb'
-      header
-      onClick={handleButtonClick}
-      href='https://www.airbnb.com/rooms/26077543'
-      style={{
-        textAlign: 'left',
-        margin: '5px 0px 0px -10px',
-      }}
-    >
-      Book Now
-    </Menu.Item>
+
+    {/*  menu items  */}
 
     {
-      menu_lists.map(a_menu => {
+      menu_lists.map((a_menu, index) => {
         if (a_menu.subs.length > 0) {
-          return <SubMenuItems
-            key={a_menu.name}
-            a_menu={a_menu}
-            sidebarVisible={this.sidebarVisible}
-          />;
+          return (
+            <div
+              key={index}
+              className='item'
+            >
+              <Responsive maxWidth={768}>
+                <AccordionSubMenuItems
+                  key={index}
+                  a_menu={a_menu}
+                  sidebarVisible={props.sidebarVisible}
+                />
+              </Responsive>
+
+              <Responsive minWidth={768}>
+                <DropdownSubMenuItems
+                  key={index}
+                  a_menu={a_menu}
+                />
+              </Responsive>
+            </div>
+          );
         } else {
           return <Menu.Item
-            key={a_menu.to}
-            header
-            as={Link}
-            to={a_menu.to}
+            key={index}
+            href={a_menu.to + '#top'}
             name={a_menu.name}
             onClick={handleButtonClick}
-            style={{
-              textAlign: 'left',
-              margin: '0px 0px 0px -10px',
-              boxShadow: 'none',
-            }}
           />;
         }
       })
@@ -77,31 +65,12 @@ const NavMenuItems = (props) => {
 
 
 NavMenuItems.propTypes = {
-  sidebarVisible: PropTypes.func.isRequired,
+  sidebarVisible: PropTypes.func,
 };
 
 export default NavMenuItems;
 
 /*
-
-
-
-    {menu_lists.map(a_menu => {
-      (() => {
-        console.log("# Subs: " + a_menu.subs.length);
-        if (a_menu.subs.length > 0) {
-          console.log( "Sub");
-          return <SubMenuItems
-            key={a_menu.name}
-            a_menu={a_menu}/>;
-        } else {
-          console.log( "Menu");
-          return <Menu.Item key={a_menu.to} to={a_menu.to} header name={a_menu.name}/>;
-        }
-      })();
-    })}
-
-
 
   {key: 'blog', name: 'Blog', as: Link, to: '/'},
   {key: 'faq', name: 'FAQ', as: Link, to: '/'},

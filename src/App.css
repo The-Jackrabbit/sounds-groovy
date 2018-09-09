@@ -1,6 +1,7 @@
 /* vars */
 :root {
-  --color-white: #FFFDF9;
+  --color-white: #ebfafa;
+  --color-sand: #FFFDF9;
   --color-green: #7BE0AD;
   --color-blue: #33A1FD;
   --color-orange: #F7A847;
@@ -44,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 button {
-  background-color: var(--color-white);
+  background-color: var(--color-best);
   /*border: var(--color-black) solid 1px;*/
   text-transform: uppercase;
   padding: 12px;
