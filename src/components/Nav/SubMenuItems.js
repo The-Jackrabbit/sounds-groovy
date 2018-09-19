@@ -6,13 +6,18 @@ import PropTypes from 'prop-types';
 
 const SubMenuItems = (props) => {
   return (
-    <div>
+    <div
+    >
       {
         props.a_menu.subs.map(dditem => (
           <Menu.Item
             key={dditem}
             href={props.a_menu.to + '#' + dditem}
             content={dditem}
+            className='item'
+            style={{
+              textAlign: 'left',
+            }}
           />
         ))
       }

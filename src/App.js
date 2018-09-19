@@ -3,7 +3,7 @@ import NavBar from './components/Nav/NavBar';
 
 const App = () => {
   return (
-    <div id="top">
+    <div id="top" maxWidth="100%">
       <NavBar/>
     </div>
   );

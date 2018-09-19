@@ -15,9 +15,7 @@ const Rules = () => {
 
       <Grid.Row>
         <TopIntro
-          page_title={intro.page_title}
-          page_img={intro.page_img}
-          page_blurb={intro.page_blurb}
+          {...intro}
         />
       </Grid.Row>
 
@@ -29,7 +27,7 @@ const Rules = () => {
         >
           <CardGroups
             sect={sect.sect}
-            imgSize='tiny'
+            size='tiny'
           />
         </div>
       )}

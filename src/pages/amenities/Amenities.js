@@ -8,14 +8,15 @@ import CardGroups from '../../components/CardGroups';
 const Amenities = () => {
   return (
     <Grid
+      style={{
+        paddingBottom: '400px'
+      }}
     >
 
       {/*  Intro section of the page  */}
       <Grid.Row>
         <TopIntro
-          page_title={intro.page_title}
-          page_img={intro.page_img}
-          page_blurb={intro.page_blurb}
+          {...intro}
         />
       </Grid.Row>
 
@@ -25,7 +26,10 @@ const Amenities = () => {
           key={index}
           align='center'
         >
-          <span
+          <div
+            style={{
+              padding: '30px 0px 0px 0px'
+            }}
             className="anchor"
             id={sect.title}
           />
@@ -39,12 +43,10 @@ const Amenities = () => {
           />
           <CardGroups
             sect={sect.sect}
-            imgSize='tiny'
-            numPerRow='3'
+            size='mini'
           />
         </div>
       )}
-
     </Grid>
   );
 };

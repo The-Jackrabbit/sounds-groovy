@@ -1,0 +1,6 @@
+User-agent: *
+Disallow:
+Allow: *
+
+Sitemap: http://www.soundsgroovyobx.com/sitemap.xml
+Sitemap: http://soundsgroovyobx.com/sitemap.xml

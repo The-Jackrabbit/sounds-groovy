@@ -1,18 +1,25 @@
 import React from 'react';
-import deck_life from '../../resources/images/corolla-duck-beach-rental.png';
+import TopIntro from '../../components/TopIntro';
+import {intro} from '../contact-us/Data';
+import {Grid} from 'semantic-ui-react';
 
 const ContactUs = () => {
   return (
-    <div className="intro">
-      {/*change image*/}
-      <img alt="Contact-Us" src={deck_life}/>
-      <h2>
-        Contact Us ...
-      </h2>
-      <p>
-        Contact us at ...
-      </p>
-    </div>
+    <Grid
+      centered={true}
+    >
+
+      {/*  Intro section of the page  */}
+      <Grid.Row>
+        <TopIntro
+          {...intro}
+        />
+      </Grid.Row>
+
+      {/*  Start of the Contact Us body  */}
+
+
+    </Grid>
   );
 };
 export default ContactUs;

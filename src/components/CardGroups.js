@@ -16,24 +16,27 @@ const CardGroups = (props) => {
         props.sect.map((card_data, index) =>
           <Card
             key={index}
-            as='a'
-            href={card_data.siteUrl}
+            // as='a'
+            // href={card_data.siteUrl}
+            {...card_data}
           >
             <Card.Content>
               <Card.Header
                 as='h1'
-                content={card_data.name}
+                content={card_data.header}
               />
               <Image
-                src={card_data.imgUrl}
-                size={props.imgSize}
+                {...card_data}
+                // src={card_data.imgUrl}
+                size={props.size}
               />
               <Card.Description
                 // as='h4'
                 style={{
                   paddingTop:'11px'
                 }}
-                content={card_data.descr}
+                content={card_data.description}
+                //{...card_data}
               />
             </Card.Content>
           </Card>
@@ -51,7 +54,7 @@ CardGroups.defaultProps = {
 
 CardGroups.propTypes = {
   sect: PropTypes.array.isRequired,
-  imgSize: PropTypes.string.isRequired,
+  size: PropTypes.string.isRequired,
   numPerRow: PropTypes.string
 };
 

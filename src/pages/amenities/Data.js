@@ -50,9 +50,9 @@ import hangar from '../../resources/svg/034-hanger.svg';
 
 
 export const intro = {
-  page_title: 'Amenities ... comfort and convenience!',
-  page_img: deck_life,
-  page_blurb: `
+  header: 'Amenities ... comfort and convenience!',
+  src: deck_life,
+  description: `
     Sounds Groovy OBX provides many amenities! Whether you are
     on vacation or visiting the Outer Banks for a family wedding, Sounds 
     Groovy OBX has tried to think of your every need! Comfort and 
@@ -66,172 +66,172 @@ export const sections = [
   { title: 'General',
     sect: [
       {
-        descr: 'One King Bed',
-        imgUrl: king
+        description: 'One King Bed',
+        src: king
       },
       {
-        descr: 'Two Queen Beds',
-        imgUrl: queen
+        description: 'Two Queen Beds',
+        src: queen
       },
       {
-        descr: 'Sheets, Bath & Beach Towels',
-        imgUrl: sheets
+        description: 'Sheets, Bath & Beach Towels',
+        src: sheets
       },
       {
-        descr: 'Wifi',
-        imgUrl: wifi
+        description: 'Wifi',
+        src: wifi
       },
       {
-        descr: 'Television',
-        imgUrl: tv
+        description: 'Television',
+        src: tv
       },
       {
-        descr: 'Cable Television',
-        imgUrl: cable
+        description: 'Cable Television',
+        src: cable
       },
       {
-        descr: 'Heat & Air Conditioning',
-        imgUrl: heat
+        description: 'Heat & Air Conditioning',
+        src: heat
       },
       {
-        descr: 'Free Parking',
-        imgUrl: parking
+        description: 'Free Parking',
+        src: parking
       }
     ]
   },
   { title: 'Kitchen',
     sect:[
       {
-        descr: 'Generously Stocked Kitchen',
-        imgUrl: kitchen
+        description: 'Generously Stocked Kitchen',
+        src: kitchen
       },
       {
-        descr: 'Keurig',
-        imgUrl: keurig
+        description: 'Keurig',
+        src: keurig
       },
       {
-        descr: 'Toaster Oven',
-        imgUrl: toaster
+        description: 'Toaster Oven',
+        src: toaster
       },
       {
-        descr: 'Immersion Blender',
-        imgUrl: iblender
+        description: 'Immersion Blender',
+        src: iblender
       },
       {
-        descr: 'Blender',
-        imgUrl: blender
+        description: 'Blender',
+        src: blender
       },
       {
-        descr: 'Crockpot',
-        imgUrl: crockpot
+        description: 'Crockpot',
+        src: crockpot
       },
       {
-        descr: 'Spices & Condiments',
-        imgUrl: spices
+        description: 'Spices & Condiments',
+        src: spices
       },
       {
-        descr: 'Wine Opener',
-        imgUrl: corkscrew
+        description: 'Wine Opener',
+        src: corkscrew
       },
     ]
   },
   { title: 'Personal Care',
     sect:[
       {
-        descr: 'Hair Dryer',
-        imgUrl: hair_dryer
+        description: 'Hair Dryer',
+        src: hair_dryer
       },
       {
-        descr: 'Dressing mirror',
-        imgUrl: mirror
+        description: 'Dressing mirror',
+        src: mirror
       },
       {
-        descr: 'Lighted makeup mirror',
-        imgUrl: mmirror
+        description: 'Lighted makeup mirror',
+        src: mmirror
       },
       {
-        descr: 'Shampoo & Conditioner',
-        imgUrl: shampoo
+        description: 'Shampoo & Conditioner',
+        src: shampoo
       },
       {
-        descr: 'Body Wash',
-        imgUrl: soap
+        description: 'Body Wash',
+        src: soap
       },
       {
-        descr: 'Hangars',
-        imgUrl: hangar
+        description: 'Hangars',
+        src: hangar
       },
       {
-        descr: 'Washer & Dryer',
-        imgUrl: washer
+        description: 'Washer & Dryer',
+        src: washer
       },
       {
-        descr: 'Iron & Ironing Board',
-        imgUrl: iron
+        description: 'Iron & Ironing Board',
+        src: iron
       },
     ]
   },
   { title: 'Recreational',
     sect:[
       {
-        descr: 'Beach Chairs & Umbrellas',
-        imgUrl: umbrella
+        description: 'Beach Chairs & Umbrellas',
+        src: umbrella
       },
       {
-        descr: 'Beach Towels',
-        imgUrl: sheets
+        description: 'Beach Towels',
+        src: sheets
       },
       {
-        descr: 'Community Pool',
-        imgUrl: pool
+        description: 'Community Pool',
+        src: pool
       },
       {
-        descr: 'Community Boat Ramp',
-        imgUrl: ramp
+        description: 'Community Boat Ramp',
+        src: ramp
       },
       {
-        descr: 'Fishing Rods',
-        imgUrl: rods
+        description: 'Fishing Rods',
+        src: rods
       },
       {
-        descr: 'Fishing Dock',
-        imgUrl: fishing
+        description: 'Fishing Dock',
+        src: fishing
       },
       {
-        descr: 'Dock for Water Toys',
-        imgUrl: boat
+        description: 'Dock for Water Toys',
+        src: boat
       },
       {
-        descr: 'Trailer Parking',
-        imgUrl: jetski
+        description: 'Trailer Parking',
+        src: jetski
       },
     ]
   },
   { title: 'Safety',
     sect:[
       {
-        descr: 'Smoke Detectors',
-        imgUrl: smoke
+        description: 'Smoke Detectors',
+        src: smoke
       },
       {
-        descr: 'Carbon Monoxide Detectors',
-        imgUrl: monoxide
+        description: 'Carbon Monoxide Detectors',
+        src: monoxide
       },
       {
-        descr: 'First Aid Kit',
-        imgUrl: first_aid_kit
+        description: 'First Aid Kit',
+        src: first_aid_kit
       },
       {
-        descr: 'Fire Extinguisher - all levels',
-        imgUrl: fire_extinguisher
+        description: 'Fire Extinguisher - all levels',
+        src: fire_extinguisher
       },
       {
-        descr: 'Flashlight - every bedroom',
-        imgUrl: flashlight
+        description: 'Flashlight - every bedroom',
+        src: flashlight
       },
       {
-        descr: 'Keyless Entry',
-        imgUrl: keypad
+        description: 'Keyless Entry',
+        src: keypad
       }
     ]
   },

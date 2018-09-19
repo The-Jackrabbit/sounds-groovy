@@ -2,6 +2,7 @@ import React from 'react';
 import {Grid, Menu} from 'semantic-ui-react';
 import NavMenuItems from './NavMenuItems';
 import Routes from '../../router';
+import LogoHeader from './LogoHeader';
 
 // presents the desktop top bar menu
 
@@ -11,10 +12,17 @@ const NavTopMenu = () => {
       <Grid.Row>
         <Menu
           fixed='top'
-          size='large'
+          size='massive'
           borderless
           fluid
+          style={{
+            boxShadow: 'none',
+            zIndex: '1',
+          }}
         >
+          {/*  SGOBX brand - logo and name  */}
+          <LogoHeader
+          />
           <NavMenuItems/>
         </Menu>
       </Grid.Row>

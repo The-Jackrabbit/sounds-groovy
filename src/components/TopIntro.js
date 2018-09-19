@@ -17,16 +17,16 @@ const TopIntro = (props) => {
       >
         <Item.Content>
           <Image
-            src={props.page_img}
+            src={props.src}
             size='massive'
           />
           <Item.Header
             as='h1'
-            content={props.page_title}
+            content={props.header}
           />
           <Item.Description
-            as='h3'
-            content={props.page_blurb}
+            as='h4'
+            content={props.description}
           />
         </Item.Content>
       </Item>
@@ -36,9 +36,9 @@ const TopIntro = (props) => {
 
 
 TopIntro.propTypes = {
-  page_blurb: PropTypes.string.isRequired,
-  page_img: PropTypes.string.isRequired,
-  page_title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  src: PropTypes.string.isRequired,
+  header: PropTypes.string.isRequired,
 };
 
 export default TopIntro;

@@ -1,5 +1,6 @@
 // hosts the data for the menu selections both top and side menus
-// subs contain the sub menu items
+// subs contain the sub menu items -- they need to be the same as the
+// section names or the mid-page href's will NOT work
 
 export const menu_lists = [
   // order counts
@@ -13,7 +14,7 @@ export const menu_lists = [
   },
   {
     name: 'OBX Guide', to: '/Guide',
-    subs: ['Breakfast', 'Lunch', 'Dinner', 'Crab Feast']
+    subs: ['Breakfast', 'Lunch', 'Dinner', 'Crab Feast Anyone!?!\n']
   },
   {
     name: 'Location', to: '/Location',
@@ -23,8 +24,16 @@ export const menu_lists = [
     name: 'Policies', to: '/Rules',
     subs: []
   },
+  // {
+  //   name: 'About Us', to: '/AboutUs',
+  //   subs: []
+  // },
   {
-    name: 'About Us', to: '/AboutUs',
+    name: 'Contact Us', to: '/ContactUs',
+    subs: []
+  },
+  {
+    name: 'Blog', to: '/Blog',
     subs: []
   },
 ];

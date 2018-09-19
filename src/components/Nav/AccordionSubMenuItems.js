@@ -25,12 +25,13 @@ export default class AccordionSubMenuItems extends Component {
       <Accordion
         as={Menu}
         vertical
-        size='mini'
+        // size='mini'
         // borderless
+        position='left'
         style={{
           textAlign: 'left',
-          // boxShadow: 'none',
-          padding: '0px'
+          boxShadow: 'none',
+          // padding: '10px'
         }}
       >
 

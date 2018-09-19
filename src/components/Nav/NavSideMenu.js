@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Routes from '../../router';
 import {Menu, Segment, Sidebar, Sticky} from 'semantic-ui-react';
 import NavMenuItems from './NavMenuItems';
+import LogoHeader from './LogoHeader';
 
 // presents the mobile sidebar menu
 
@@ -27,13 +28,26 @@ export default class NavSideMenu extends Component {
     return (
       <div
       >
+        <Menu
+          fixed='top'
+          borderless
+          style={{
+            boxShadow: 'none',
+          }}
+        >
 
-        {/*  shows the hamburger menu button  */}
-        <Menu fixed='top'>
+          {/*  SGOBX brand - logo and name  */}
+          <LogoHeader
+          />
+
+          {/*  shows the hamburger menu button  */}
           <Menu.Item
             position='right'
             onClick={this.handleButtonClick}
             icon='bars'
+            style={{
+              // boxShadow: 'none',
+            }}
           />
         </Menu>
 
@@ -48,12 +62,22 @@ export default class NavSideMenu extends Component {
               onHide={this.handleSidebarHide}
               vertical
               borderless
+              className='item'
               visible={visible}
               style={{
-                width: '200px',
+                top: '100px',
+                width: '150px',
+                maxHeight: '60%',
+                // textAlign: 'left',
+                // paddingLeft: '100px'
               }}
             >
-              <NavMenuItems sidebarVisible={this.handleButtonClick}/>
+              <NavMenuItems
+                sidebarVisible={this.handleButtonClick}
+                style={{
+                  paddingLeft: '100px'
+                }}
+              />
             </Sidebar>
           </Sticky>
 

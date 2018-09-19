@@ -9,15 +9,16 @@ const Guide = () => {
   return (
     <Grid
       centered={true}
+      style={{
+        paddingBottom: '400px'
+      }}
     >
 
       {/*  Intro section of the page  */}
 
       <Grid.Row>
         <TopIntro
-          page_title={intro.page_title}
-          page_img={intro.page_img}
-          page_blurb={intro.page_blurb}
+          {...intro}
         />
       </Grid.Row>
 
@@ -34,7 +35,7 @@ const Guide = () => {
           <Header
             as='h2'
             style={{
-              padding: '50px 0px 0px 30px'
+              padding: '65px 0px 0px 30px'
             }}
             content={sect.title}
           />

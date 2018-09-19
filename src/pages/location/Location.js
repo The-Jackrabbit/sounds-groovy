@@ -1,5 +1,5 @@
 import React from 'react';
-import {Map, TileLayer, Marker, Popup, Tooltip, Rectangle} from 'react-leaflet';
+import {Map, TileLayer, Marker, Tooltip} from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
@@ -8,7 +8,6 @@ import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 import {Grid} from 'semantic-ui-react';
 import TopIntro from '../../components/TopIntro';
 import {intro} from '../location/Data';
-import LocTest from './LocTest';
 
 let DefaultIcon = L.icon({
   iconUrl: icon,
@@ -32,9 +31,7 @@ const Location = () => {
       {/*  Intro section of the page  */}
       <Grid.Row>
         <TopIntro
-          page_title={intro.page_title}
-          page_img={intro.page_img}
-          page_blurb={intro.page_blurb}
+          {...intro}
         />
       </Grid.Row>
 

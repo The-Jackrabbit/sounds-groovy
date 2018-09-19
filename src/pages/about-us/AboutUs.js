@@ -13,9 +13,7 @@ const AboutUs = () => {
       {/*  Intro section of the page  */}
       <Grid.Row>
         <TopIntro
-          page_title={intro.page_title}
-          page_img={intro.page_img}
-          page_blurb={intro.page_blurb}
+          {...intro}
         />
       </Grid.Row>
 
@@ -28,11 +26,11 @@ const AboutUs = () => {
           <Card.Content>
             <Card.Header
               as='h1'
-              content={sect.title}
+              content={sect.header}
             />
             <Card.Description
               as='h3'
-              content={sect.content}
+              content={sect.description}
               textAlign='left'
             />
           </Card.Content>

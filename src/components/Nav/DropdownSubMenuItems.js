@@ -20,12 +20,16 @@ export default class DropdownSubMenuItems extends Component {
           {/*  div style needed to add space at top of header label  */}
           <div
             style={{
-              marginTop: '10px'
+              marginTop: '10px',
+              textAlign: 'left',
             }}
           />
           <Dropdown.Header
             content={this.props.a_menu.name}
             href={this.props.a_menu.to + '#top'}
+            style={{
+              paddingLeft: '10px'
+            }}
           />
           <Divider/>
           {
