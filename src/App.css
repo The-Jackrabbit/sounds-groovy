@@ -1,4 +1,5 @@
 /* vars */
+
 :root {
   --color-white: #ebfafa;
   --color-sand: #FFFDF9;
@@ -9,6 +10,7 @@
   --color-gray: #3A424C;
   --color-black: #292F36;
 }
+
 
 html {
   overflow: hidden;

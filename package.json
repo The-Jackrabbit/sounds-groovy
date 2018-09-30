@@ -3,18 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "aws-sdk": "^2.320.0",
     "history": "^4.7.2",
     "leaflet": "^1.3.4",
     "leaflet-defaulticon-compatibility": "^0.1.1",
     "prop-types": "^15.6.2",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-google-recaptcha": "^1.0.4",
     "react-icons": "^2.2.7",
     "react-leaflet": "^2.0.1",
     "react-responsive": "^1.3.4",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.2.2",
-    "semantic-ui-react": "^0.82.3"
+    "redux": "^4.0.0",
+    "semantic-ui-react": "^0.82.3",
+    "video-react": "^0.13.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",

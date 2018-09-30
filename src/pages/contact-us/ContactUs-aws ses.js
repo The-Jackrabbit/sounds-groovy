@@ -18,16 +18,11 @@ let AWS = require('aws-sdk');
 
 // const ContactUs = () => {
 
-// AWS.config.update({
-// //   region: 'us-east-1',
-// //   accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-// //   secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-// // });
-
-
-
-// Load your AWS credentials and try to instantiate the object.
-AWS.config.loadFromPath('~/src/config.json');
+AWS.config.update({
+  region: 'us-east-1',
+  accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+});
 
 class ContactUs extends Component {
 
@@ -64,7 +59,7 @@ class ContactUs extends Component {
 
 
 // Create the promise and SES service object
-  let sendPromise = new AWS.SES({apiVersion: 'latest'}).sendEmail(this.params).promise();
+  let sendPromise = new AWS.SES({apiVersion: '2010-12-01'}).sendEmail(this.params).promise();
 
   // Handle promise's fulfilled/rejected states
   sendPromise.then(

@@ -1,83 +1,158 @@
 import React from 'react';
-import {intro, sections} from './Data';
+import PropTypes from 'prop-types';
+import {intro, blogs} from './Data';
+import {Player} from 'video-react';
 import {Divider, Grid, Header, Image, List, Segment} from 'semantic-ui-react';
 import TopIntro from '../../components/TopIntro';
+import '../../video-react.css';
 
 
 const BlogHeader = (props) => {
+  // blog header --> title and date
   return [
+    <span
+      key={'header.anchor.span.' + props.index}
+      id={props.title}
+      style={{
+        display: 'block',
+        height: '115px', /*same height as header*/
+        marginTop: '-115px', /*same height as header*/
+        visibility: 'hidden',
+      }}
+    />,
     <Divider
-      key={props.key}
+      key={'header.divider.' + props.index}
       section={true}
-      id={props.date}
       style={{
         marginTop: '22px'
       }}
     />,
     <Header
+      key={'header.' + props.index}
       as='h1'
-      key={props.key}
     >
       {props.title}
     </Header>,
     <span
-      key={props.key}
+      key={'header.span.' + props.index}
     >
       {props.date}
     </span>,
-    <Divider
-      key={props.key}
-      hidden/>
   ];
 };
 
+const BlogTOC = (props) => {
+  return [
+    <List
+      key={'blog.right.col' + props.index}
+    >
+      <List.Item
+        key={'blog.right.col.item.' + props.index}
+        as='a'
+        href={'#' + props.title}
+      >
+        {props.date}, {props.title}
+      </List.Item>
+    </List>
+  ];
+};
+
+const BlogSubtitle = (props) => {
+  return (
+    props.subtitle
+      ?
+      <Header
+        as='h3'
+        content={props.subtitle}
+      />
+      : null
+  );
+};
+
 const BlogPara = (props) => {
+  let anchor_para = {__html: props.para}
+  return (
+    <div
+      align='left'
+      style={{
+        fontSize: '1.5rem',
+        padding: '10px',
+        textAlign: 'justify',
+      }}
+      dangerouslySetInnerHTML={anchor_para}
+    />
+  );
+};
+
+const BlogImg = (props) => {
+  return (
+    props.img
+      ?
+      <Image
+        style={{display: 'inherit'}}
+        size='medium'
+        floated='left'
+        src={props.img}
+      />
+      : null
+  );
+};
+
+const BlogVideo = (props) => {
+  return [
+    props.video
+      ?
+      <Player
+        key={'blog.video.' + props.index}
+        src={props.video}
+        poster={props.poster}
+      />
+      : null
+  ];
+};
+
+const BlogParts = (props) => {
+  /*  Props = Parts Array -- Subtitle, Body -- an array of dictionaries */
   return [
     <Segment
-      key={props.key}
+      key={'segment.' + props.idx}
       borderless={true}
       style={{
         background: 'None',
         boxShadow: 'None',
-        border: 'None'
+        border: 'None',
       }}
     >
-      {
-        props.subtitle
-          ?
-          <Header
-            key={props.key}
-            as='h3'
-            content={props.subtitle}
-          />
-          : null
-      }
       <div
-        key={props.key}
+        key={'blog.part.' + props.idx}
         className="ui clearing segment"
-        borderless={true}
         style={{
           background: 'None',
           boxShadow: 'None',
-          border: 'None'
+          border: 'None',
+          padding: '0px',
+          margin: '0px',
         }}
       >
-        {
-          props.img
-            ?
-            <Image
-              key={props.key}
-              style={{display: 'inherit'}}
-              size='medium'
-              floated='left'
-              src={props.img}
-              onError={i => i.target.style.display = 'none'}
-            />
-            : null
-        }
-        <p align='left'>
-          {props.body}
-        </p>
+        <BlogSubtitle
+          {...props}
+        />
+        {props.body.map((bodyparts, index) =>
+          [
+            <BlogImg
+              key={index}
+              {...bodyparts}
+            />,
+            <BlogPara
+              key={index}
+              {...bodyparts}
+            />,
+            <BlogVideo
+              key={index}
+              {...bodyparts}
+            />,
+          ]
+        )}
       </div>
     </Segment>
   ];
@@ -101,28 +176,30 @@ const Blog = () => {
         />
       </Grid.Row>
 
-      {/*  Start of the Blog sections  */}
+      {/*  Start of Blogs  */}
       <Grid.Row
       >
 
-        {/*  Blog Articles - Start */}
+        {/*  Blogs - Start */}
         <Grid.Column
-          width={11}
+          width={13}
         >
           {
-            sections.map((sect, index) =>
+            blogs.map((blog, index) =>
               <div
-                key={'div.blog.header' + index}
+                key={'div.blog.header.' + index}
               >
                 <BlogHeader
-                  key={'blog.header' + index}
-                  {...sect}
+                  key={'blog.header.' + index}
+                  {...blog}
                   index={index}
                 />
                 {
-                  sect.parts.map((part, idx) =>
-                    <BlogPara
-                      key={'blog.' + index + '.blog.para.' + idx}
+                  blog.parts.map((part, idx) =>
+                    // console.log('PARTS--> ' + part.subtitle)
+                    <BlogParts
+                      key={'blog.part.' + idx}
+                      index={idx}
                       {...part}
                     />
                   )
@@ -131,35 +208,32 @@ const Blog = () => {
             )
           }
         </Grid.Column>
-        {/*  Blog Articles - End */}
+        {/*  Blogs - End */}
 
-        {/*  Blog Table of Contents - Start  */}
+        {/*  Blogs Table of Contents - Start  */}
         <Grid.Column
-          width={4}
+          width={3}
           floated='right'
         >
           <Header
-            floated='top'
+            floated='left'
             content='Archives'
           />
 
           <Divider
             section={true}
           />
-          {sections.map((sect, index) =>
-            <List
-              key={'blog.right.col' + index}
-            >
-              <List.Item
-                as='a'
-                href={'#' + sect.date}
-              >
-                {sect.date}, {sect.title}
-              </List.Item>
-            </List>
-          )}
+          {
+            blogs.map((blog, index) =>
+              <BlogTOC
+                key={'blog.toc.' + index}
+                index={index}
+                {...blog}
+              />
+            )
+          }
         </Grid.Column>
-        {/*  Blog Table of Contents - End  */}
+        {/*  Blogs Table of Contents - End  */}
 
       </Grid.Row>
 
@@ -167,43 +241,31 @@ const Blog = () => {
   ];
 };
 
+BlogSubtitle.propTypes = {
+  subtitle: PropTypes.string.isRequired,
+};
+
+BlogImg.propTypes = {
+  img: PropTypes.string.isRequired,
+};
+
+BlogTOC.propTypes = {
+  title: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  index: PropTypes.number.isRequired,
+};
+
+BlogPara.propTypes = {
+  para: PropTypes.string.isRequired,
+};
+
+BlogParts.propTypes = {
+  parts: PropTypes.array.isRequired,
+};
 
 export default Blog;
 
-/*       <div
-          key={index}
-        >
-          <span
-            id={sect.title}
-            className="anchor"
-          />
-          <Header
-            as='h2'
-            style={{
-              padding: '50px 0px 0px 30px'
-            }}
-            content={sect.title}
-          />
-          <Story
-            sect={sect.sect}
-          />
-        </div>
+/*
 
 
-        <Item>
-          <Item.Content>
-            <Image
-              src={intro.page_img}
-              size='massive'
-            />
-            <Item.Header
-              as='h1'
-              content={intro.page_title}
-            />
-            <Item.Description
-              as='h3'
-              content={intro.page_blurb}
-            />
-          </Item.Content>
-        </Item>
  */

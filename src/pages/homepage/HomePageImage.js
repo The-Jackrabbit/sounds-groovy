@@ -19,7 +19,7 @@ const HomePageImage = (props) => {
           style={{
             // backgroundSize: 'cover',
             // backgroundPosition: 'center',
-            maxWidth: '100%',
+            // maxWidth: '100%',
             maxHeight: 'calc(100vh - 65px)',
             // display: 'block',
             // backgroundAttachment: 'fixed',
