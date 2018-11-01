@@ -10,7 +10,7 @@ import AccordionSubMenuItems from './AccordionSubMenuItems';
 const NavMenuItems = (props) => {
   const handleButtonClick = () => {
     console.log('handling button click');
-    props.sidebarVisible();
+    props.sidebarVisible;
   };
 
   /*  menu items -- called by both top and side menus  */

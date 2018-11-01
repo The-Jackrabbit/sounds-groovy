@@ -177,108 +177,108 @@
             <!--</image:title>-->
         <!--</image:image>-->
     <!--</url>-->
-    <url>
-        <loc>http://www.soundsgroovyobx.com/amenities</loc>
-        <image:image>
-            <image:loc>http://soundsgroovyobx.com/static/media/corolla-duck-beach-rental.65b57739.JPG</image:loc>
-            <image:caption>
-                Deck Life Fishing Fun
-            </image:caption>
-            <image:geo_location>Kitty Hawk, NC</image:geo_location>
-            <image:title>
-                Vacation Beach House Rentals Kitty Hawk North Carolina
-            </image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>http://soundsgroovyobx.com/amenities</loc>
-        <image:image>
-            <image:loc>http://soundsgroovyobx.com/static/media/corolla-duck-beach-rental.65b57739.JPG</image:loc>
-            <image:caption>
-                Deck Life Fishing Fun
-            </image:caption>
-            <image:geo_location>Kitty Hawk, NC</image:geo_location>
-            <image:title>
-                Vacation Beach House Rentals Kitty Hawk North Carolina
-            </image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>http://www.soundsgroovyobx.com/guide</loc>
-        <image:image>
-            <image:loc>http://soundsgroovyobx.com/static/media/cottage-vacation-kill-devil-hills.042c5046.JPG</image:loc>
-            <image:caption>
-                Scenic Skies Beach Life
-            </image:caption>
-            <image:geo_location>Hatteras, NC</image:geo_location>
-            <image:title>
-                Relax, Rejuvenate Short-Term Rental Beach Vacation
-            </image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>http://soundsgroovyobx.com/guide</loc>
-        <image:image>
-            <image:loc>http://soundsgroovyobx.com/static/media/cottage-vacation-kill-devil-hills.042c5046.JPG</image:loc>
-            <image:caption>
-                Scenic Skies Beach Life
-            </image:caption>
-            <image:geo_location>Hatteras, NC</image:geo_location>
-            <image:title>
-                Relax, Rejuvenate Short-Term Rental Beach Vacation
-            </image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>http://www.soundsgroovyobx.com/location</loc>
-        <image:image>
-            <image:loc>http://soundsgroovyobx.com/static/media/beach-vacation-rental-home.370ddbb0.JPG</image:loc>
-            <image:caption>
-                Beach Getaway
-            </image:caption>
-            <image:geo_location>Duck, NC</image:geo_location>
-            <image:title>
-                Nags Head Beach Rental
-            </image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>http://soundsgroovyobx.com/location</loc>
-        <image:image>
-            <image:loc>http://soundsgroovyobx.com/static/media/beach-vacation-rental-home.370ddbb0.JPG</image:loc>
-            <image:caption>
-                Beach Getaway
-            </image:caption>
-            <image:geo_location>Duck, NC</image:geo_location>
-            <image:title>
-                Nags Head Beach Rental
-            </image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>http://www.soundsgroovyobx.com/rules</loc>
-        <image:image>
-            <image:loc>http://soundsgroovyobx.com/static/media/beach-house-rental-nags-head.7c8c6b7a.JPG</image:loc>
-            <image:caption>
-                Visit Nags Head Weekend Getaway
-            </image:caption>
-            <image:geo_location>Southern Shores, NC</image:geo_location>
-            <image:title>
-                Sounds Groovy OBX!  Outer Banks Vacation Rental House
-            </image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>http://soundsgroovyobx.com/rules</loc>
-        <image:image>
-            <image:loc>http://soundsgroovyobx.com/static/media/beach-house-rental-nags-head.7c8c6b7a.JPG</image:loc>
-            <image:caption>
-                Visit Nags Head Weekend Getaway
-            </image:caption>
-            <image:geo_location>Southern Shores, NC</image:geo_location>
-            <image:title>
-                Sounds Groovy OBX!  Outer Banks Vacation Rental House
-            </image:title>
-        </image:image>
-    </url>
+    <!--<url>-->
+        <!--<loc>http://www.soundsgroovyobx.com/amenities</loc>-->
+        <!--<image:image>-->
+            <!--<image:loc>http://soundsgroovyobx.com/static/media/corolla-duck-beach-rental.65b57739.JPG</image:loc>-->
+            <!--<image:caption>-->
+                <!--Deck Life Fishing Fun-->
+            <!--</image:caption>-->
+            <!--<image:geo_location>Kitty Hawk, NC</image:geo_location>-->
+            <!--<image:title>-->
+                <!--Vacation Beach House Rentals Kitty Hawk North Carolina-->
+            <!--</image:title>-->
+        <!--</image:image>-->
+    <!--</url>-->
+    <!--<url>-->
+        <!--<loc>http://soundsgroovyobx.com/amenities</loc>-->
+        <!--<image:image>-->
+            <!--<image:loc>http://soundsgroovyobx.com/static/media/corolla-duck-beach-rental.65b57739.JPG</image:loc>-->
+            <!--<image:caption>-->
+                <!--Deck Life Fishing Fun-->
+            <!--</image:caption>-->
+            <!--<image:geo_location>Kitty Hawk, NC</image:geo_location>-->
+            <!--<image:title>-->
+                <!--Vacation Beach House Rentals Kitty Hawk North Carolina-->
+            <!--</image:title>-->
+        <!--</image:image>-->
+    <!--</url>-->
+    <!--<url>-->
+        <!--<loc>http://www.soundsgroovyobx.com/guide</loc>-->
+        <!--<image:image>-->
+            <!--<image:loc>http://soundsgroovyobx.com/static/media/cottage-vacation-kill-devil-hills.042c5046.JPG</image:loc>-->
+            <!--<image:caption>-->
+                <!--Scenic Skies Beach Life-->
+            <!--</image:caption>-->
+            <!--<image:geo_location>Hatteras, NC</image:geo_location>-->
+            <!--<image:title>-->
+                <!--Relax, Rejuvenate Short-Term Rental Beach Vacation-->
+            <!--</image:title>-->
+        <!--</image:image>-->
+    <!--</url>-->
+    <!--<url>-->
+        <!--<loc>http://soundsgroovyobx.com/guide</loc>-->
+        <!--<image:image>-->
+            <!--<image:loc>http://soundsgroovyobx.com/static/media/cottage-vacation-kill-devil-hills.042c5046.JPG</image:loc>-->
+            <!--<image:caption>-->
+                <!--Scenic Skies Beach Life-->
+            <!--</image:caption>-->
+            <!--<image:geo_location>Hatteras, NC</image:geo_location>-->
+            <!--<image:title>-->
+                <!--Relax, Rejuvenate Short-Term Rental Beach Vacation-->
+            <!--</image:title>-->
+        <!--</image:image>-->
+    <!--</url>-->
+    <!--<url>-->
+        <!--<loc>http://www.soundsgroovyobx.com/location</loc>-->
+        <!--<image:image>-->
+            <!--<image:loc>http://soundsgroovyobx.com/static/media/beach-vacation-rental-home.370ddbb0.JPG</image:loc>-->
+            <!--<image:caption>-->
+                <!--Beach Getaway-->
+            <!--</image:caption>-->
+            <!--<image:geo_location>Duck, NC</image:geo_location>-->
+            <!--<image:title>-->
+                <!--Nags Head Beach Rental-->
+            <!--</image:title>-->
+        <!--</image:image>-->
+    <!--</url>-->
+    <!--<url>-->
+        <!--<loc>http://soundsgroovyobx.com/location</loc>-->
+        <!--<image:image>-->
+            <!--<image:loc>http://soundsgroovyobx.com/static/media/beach-vacation-rental-home.370ddbb0.JPG</image:loc>-->
+            <!--<image:caption>-->
+                <!--Beach Getaway-->
+            <!--</image:caption>-->
+            <!--<image:geo_location>Duck, NC</image:geo_location>-->
+            <!--<image:title>-->
+                <!--Nags Head Beach Rental-->
+            <!--</image:title>-->
+        <!--</image:image>-->
+    <!--</url>-->
+    <!--<url>-->
+        <!--<loc>http://www.soundsgroovyobx.com/rules</loc>-->
+        <!--<image:image>-->
+            <!--<image:loc>http://soundsgroovyobx.com/static/media/beach-house-rental-nags-head.7c8c6b7a.JPG</image:loc>-->
+            <!--<image:caption>-->
+                <!--Visit Nags Head Weekend Getaway-->
+            <!--</image:caption>-->
+            <!--<image:geo_location>Southern Shores, NC</image:geo_location>-->
+            <!--<image:title>-->
+                <!--Sounds Groovy OBX!  Outer Banks Vacation Rental House-->
+            <!--</image:title>-->
+        <!--</image:image>-->
+    <!--</url>-->
+    <!--<url>-->
+        <!--<loc>http://soundsgroovyobx.com/rules</loc>-->
+        <!--<image:image>-->
+            <!--<image:loc>http://soundsgroovyobx.com/static/media/beach-house-rental-nags-head.7c8c6b7a.JPG</image:loc>-->
+            <!--<image:caption>-->
+                <!--Visit Nags Head Weekend Getaway-->
+            <!--</image:caption>-->
+            <!--<image:geo_location>Southern Shores, NC</image:geo_location>-->
+            <!--<image:title>-->
+                <!--Sounds Groovy OBX!  Outer Banks Vacation Rental House-->
+            <!--</image:title>-->
+        <!--</image:image>-->
+    <!--</url>-->
 </urlset>

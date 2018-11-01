@@ -3,6 +3,7 @@ import {Grid, Menu} from 'semantic-ui-react';
 import NavMenuItems from './NavMenuItems';
 import Routes from '../../router';
 import LogoHeader from './LogoHeader';
+import SocialFooter from '../SocialFooter';
 
 // presents the desktop top bar menu
 
@@ -28,6 +29,9 @@ const NavTopMenu = () => {
       </Grid.Row>
       <Grid.Row>
         <Routes/>
+      </Grid.Row>
+      <Grid.Row>
+        <SocialFooter/>
       </Grid.Row>
     </Grid>
   );

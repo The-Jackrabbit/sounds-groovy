@@ -2,7 +2,6 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 // Pages
-// import AboutUs from '../pages/about-us/AboutUs';
 import Amenities from '../pages/amenities/Amenities';
 import Blog from '../pages/blog/Blog';
 import ContactUs from '../pages/contact-us/ContactUs';
@@ -14,9 +13,7 @@ import Location from '../pages/location/Location';
 
 const Routes = () => (
   <Switch>
-    {/*<Route exact path="/" component={Home}/>*/}
     <Route exact path="/" component={HomePage}/>
-    {/*<Route exact path="/aboutus/" component={AboutUs}/>*/}
     <Route exact path="/amenities/" component={Amenities}/>
     <Route exact path="/blog/" component={Blog}/>
     <Route exact path="/contactus/" component={ContactUs}/>

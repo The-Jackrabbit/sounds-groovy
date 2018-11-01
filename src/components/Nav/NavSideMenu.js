@@ -3,6 +3,7 @@ import Routes from '../../router';
 import {Menu, Segment, Sidebar, Sticky} from 'semantic-ui-react';
 import NavMenuItems from './NavMenuItems';
 import LogoHeader from './LogoHeader';
+import SocialFooter from '../SocialFooter';
 
 // presents the mobile sidebar menu
 
@@ -84,6 +85,9 @@ export default class NavSideMenu extends Component {
           <Sidebar.Pusher>
             <Segment basic>
               <Routes/>
+            </Segment>
+            <Segment>
+              <SocialFooter/>
             </Segment>
           </Sidebar.Pusher>
         </Sidebar.Pushable>
